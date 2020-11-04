@@ -1,0 +1,27 @@
+@import "utils";
+@import "fonts";
+
+body {
+  font-family: "Rajdhani", sans-serif;
+  text-transform: uppercase;
+  display: flex;
+  flex-direction: column;
+}
+
+.wrapper {
+  position: relative;
+  padding: 0 13px;
+  max-width: 1280px;
+
+  @media (min-width: 768px) {
+    padding: 0 27px;
+  }
+}
+
+@import "top";
+@import "header";
+@import "menu";
+@import "top-slider";
+@import "main";
+@import "products-slider";
+@import "product";

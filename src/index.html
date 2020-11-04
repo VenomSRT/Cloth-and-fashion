@@ -4,10 +4,373 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Title</title>
-    <link rel="stylesheet" href="./styles/main.scss">
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    >
+    <link rel="stylesheet" href="./styles/root.scss">
   </head>
   <body>
-    <h1>Hello Mate Academy</h1>
+    <div class="top">
+      <div class="top__wrapper wrapper">
+        <div class="top__message top__message--active">Frete grãtis para compras acima de r$300,00</div>
+        <div class="top__message">Frete para compras acima grãtis de r$500,00</div>
+        <div class="top__message">Frete acima grãtis para compras de r$100,00</div>
+        <div class="top__dots-container">
+          <div class="top__dot"></div>
+          <div class="top__dot top__dot--active"></div>
+          <div class="top__dot"></div>
+        </div>
+      </div>
+    </div>
+
+    <article class="top-slider">
+      <div class="top-slider__slide">
+        <section class="top-slider__content">
+          <h1 class="top-slider__title">
+            <span class="top-slider__bolder">C&F</span> clothing
+          </h1>
+          <p class="top-slider__desctiption">sports & lifestyle</p>
+          <button class="top-slider__button">
+            Confira
+          </button>
+        </section>
+      </div>
+      <div class="top-slider__controls">
+        <div class="top-slider__dots-container">
+          <div class="top-slider__dot"></div>
+          <div class="top-slider__dot"></div>
+          <div class="top-slider__dot top-slider__dot--active"></div>
+          <div class="top-slider__dot"></div>
+          <div class="top-slider__dot"></div>
+        </div>
+      </div>
+    </article>
+
+    <header class="header">
+      <div class="header__wrapper wrapper">
+        <div class="header__menu-burger"></div>
+        <h2 class="header__site-title">
+          Cloth & fashion
+        </h2>
+        <div class="header__misc-container">
+          <button class="header__login">Login</button>
+          <div class="header__cart"></div>
+        </div>
+      </div>
+      <nav class="header__menu menu">
+        <ul class="menu__list">
+          <li class="menu__item">
+            <a href="#" class="menu__link">Link 1</a>
+          </li>
+
+          <li class="menu__item">
+            <a href="#" class="menu__link">Link 2</a>
+          </li>
+
+          <li class="menu__item">
+            <a href="#" class="menu__link">Link 3</a>
+          </li>
+
+          <li class="menu__item">
+            <a href="#" class="menu__link">Link 4</a>
+          </li>
+
+          <li class="menu__item">
+            <a href="#" class="menu__link">Link 5</a>
+          </li>
+        </ul>
+        <button class="header__login menu__login">Login</button>
+      </nav>
+    </header>
+
+    <main class="main">
+      <div class="main__wrapper">
+        <div class="main__products">
+          <div class="main__title-container">
+            <h3 class="main__title">Produtos em destaque</h3>
+          </div>
+          <div class="main__products-slider products-slider">
+            <div class="products-slider__controls products-slider__controls--left"></div>
+            <div class="products-slider__container">
+              <div class="products-slider__slide slide">
+                <img
+                  src="./images/product-1.jpg"
+                  alt="t-shirt image"
+                  class="slide__image"
+                >
+                <p class="slide__price">
+                  R$
+                  <span class="slide__value">88,88</span>
+                </p>
+              </div>
+
+              <div class="products-slider__slide slide">
+                <img
+                  src="./images/product-2.jpg"
+                  alt="t-shirt image"
+                  class="slide__image"
+                >
+                <div class="slide__lable-container"></div>
+                <p class="slide__price">
+                  R$
+                  <span class="slide__value">88,88</span>
+                </p>
+              </div>
+
+              <div class="products-slider__slide slide">
+                <img
+                  src="./images/product-3v1.jpg"
+                  alt="t-shirt image"
+                  class="slide__image"
+                >
+                <p class="slide__price">
+                  R$
+                  <span class="slide__value">88,88</span>
+                </p>
+              </div>
+
+              <div class="products-slider__slide slide">
+                <img
+                  src="./images/product-4.jpg"
+                  alt="t-shirt image"
+                  class="slide__image"
+                >
+                <div class="slide__lable-container"></div>
+                <p class="slide__price">
+                  R$
+                  <span class="slide__value">88,88</span>
+                </p>
+              </div>
+
+              <div class="products-slider__slide slide">
+                <img
+                  src="./images/product-5.jpg"
+                  alt="t-shirt image"
+                  class="slide__image"
+                >
+                <p class="slide__price">
+                  R$
+                  <span class="slide__value">88,88</span>
+                </p>
+              </div>
+
+              <div class="products-slider__slide slide">
+                <img
+                  src="./images/product-6.jpg"
+                  alt="t-shirt image"
+                  class="slide__image"
+                >
+                <p class="slide__price">
+                  R$
+                  <span class="slide__value">88,88</span>
+                </p>
+              </div>
+            </div>
+            <div class="products-slider__controls slider__controls--right"></div>
+          </div>
+        </div>
+
+        <div class="main__product-sections product-sections">
+          <div class="product-sections__container">
+            <div class="product-sections__section">
+              <h3 class="product-sections__title">Jaquetas</h3>
+            </div>
+
+            <div class="product-sections__section">
+              <h3 class="product-sections__title">Shorts</h3>
+            </div>
+          </div>
+
+          <div class="product-sections__container">
+            <div class="product-sections__section">
+              <h3 class="product-sections__title">Corta-vento</h3>
+            </div>
+
+            <div class="product-sections__section">
+              <h3 class="product-sections__title">Camisas</h3>
+            </div>
+          </div>
+
+          <div class="product-sections__container">
+            <div class="product-sections__section">
+              <h3 class="product-sections__title">Calças</h3>
+            </div>
+
+            <div class="product-sections__section">
+              <h3 class="product-sections__title">Camisetas</h3>
+            </div>
+          </div>
+        </div>
+
+        <div class="main__insta-gallery">
+          <div class="main__title-container">
+            <h3 class="main__title">Galeria do instagram</h3>
+          </div>
+          <div class="main__gallery-container insta-gallery">
+            <div class="insta-gallery__image-container">
+              <img
+                src="./images/insta-1.jpg"
+                alt="instagram photo"
+                class="insta-gallery__image"
+              >
+              <div class="insta-gallery__overlay">
+                <p class="insta-gallery__likes"></p>
+              </div>
+            </div>
+
+            <div class="insta-gallery__image-container">
+              <img
+                src="./images/insta-2.jpg"
+                alt="instagram photo"
+                class="insta-gallery__image"
+              >
+              <div class="insta-gallery__overlay">
+                <p class="insta-gallery__likes"></p>
+              </div>
+            </div>
+
+            <div class="insta-gallery__image-container">
+              <img
+                src="./images/insta-3.jpg"
+                alt="instagram photo"
+                class="insta-gallery__image"
+              >
+              <div class="insta-gallery__overlay">
+                <p class="insta-gallery__likes">1.323 likes</p>
+              </div>
+            </div>
+
+            <div class="insta-gallery__image-container">
+              <img
+                src="./images/insta-4.jpg"
+                alt="instagram photo"
+                class="insta-gallery__image"
+              >
+              <div class="insta-gallery__overlay">
+                <p class="insta-gallery__likes"></p>
+              </div>
+            </div>
+
+            <div class="insta-gallery__image-container">
+              <img
+                src="./images/insta-5.jpg"
+                alt="instagram photo"
+                class="insta-gallery__image"
+              >
+              <div class="insta-gallery__overlay">
+                <p class="insta-gallery__likes"></p>
+              </div>
+            </div>
+          </div>
+
+          <div class="main__bottom-gallery">
+            <div class="main__title-container">
+              <h3 class="main__title">Quem USA</h3>
+            </div>
+            <div class="main__gallery-container bottom-gallery">
+              <div class="bottom-gallery__image-container">
+                <img
+                  src="./images/usa-image-1.jpg"
+                  alt="gallery photo"
+                  class="bottom-gallery__image"
+                >
+                <div class="bottom-gallery__overlay">
+                  <p class="bottom-gallery__description"></p>
+                </div>
+              </div>
+
+              <div class="bottom-gallery__image-container">
+                <img
+                  src="./images/usa-image-2.jpg"
+                  alt="gallery photo"
+                  class="bottom-gallery__image"
+                >
+                <div class="bottom-gallery__overlay">
+                  <p class="bottom-gallery__description">David Guetta</p>
+                </div>
+              </div>
+
+              <div class="bottom-gallery__image-container">
+                <img
+                  src="./images/usa-image-3.jpg"
+                  alt="gallery photo"
+                  class="bottom-gallery__image"
+                >
+                <div class="bottom-gallery__overlay">
+                  <p class="bottom-gallery__description"></p>
+                </div>
+              </div>
+
+              <div class="bottom-gallery__image-container">
+                <img
+                  src="./images/usa-image-4.jpg"
+                  alt="gallery photo"
+                  class="bottom-gallery__image"
+                >
+                <div class="bottom-gallery__overlay">
+                  <p class="bottom-gallery__description"></p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <form
+            action="#"
+            class="main__form form"
+            method="POST"
+          >
+            <h3 class="form__title">Newsletter</h3>
+            <input
+              type="text"
+              class="form__name-input"
+              placeholder="Nome"
+              required
+            >
+            <input
+              type="email"
+              class="form__email-input"
+              placeholder="Endereço de email"
+            >
+            <input
+              type="submit"
+              class="form__submit"
+              value="CADASTRAR"
+            >
+          </form>
+        </div>
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="footer__content wrapper">
+        <nav class="footer__menu">
+          <ul class="footer__menu-list">
+            <li class="footer__menu-item">
+              <a href="#" class="footer__menu-link">Sobre</a>
+            </li>
+
+            <li class="footer__menu-item">
+              <a href="#" class="footer__menu-link">Sobre</a>
+            </li>
+
+            <li class="footer__menu-item">
+              <a href="#" class="footer__menu-link">Sobre</a>
+            </li>
+
+            <li class="footer__menu-item">
+              <a href="#" class="footer__menu-link">Sobre</a>
+            </li>
+          </ul>
+        </nav>
+
+        <div class="footer__soc-container">
+          <a href="#" class="footer__soc-link footer__soc-link--facebook"></a>
+          <a href="#" class="footer__soc-link footer__soc-link--twitter"></a>
+          <a href="#" class="footer__soc-link footer__soc-link--instagram"></a>
+        </div>
+      </div>
+    </footer>
     <script type="text/javascript" src="scripts/main.js"></script>
   </body>
 </html>

@@ -1,4 +1,10 @@
-%h1 {
-  font-family: "Roboto", sans-serif;
-  font-weight: 400;
+%titleArrow {
+  content: "";
+  position: absolute;
+  top: 50%;
+  width: 40px;
+  height: 12px;
+  transform: translate(0, -50%);
+  background-size: 40px;
+  background-repeat: no-repeat;
 }

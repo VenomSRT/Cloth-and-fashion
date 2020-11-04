@@ -1,0 +1,44 @@
+.top {
+  order: 2;
+  position: relative;
+  background-color: $gray;
+  color: $white;
+  font-size: 12px;
+  font-weight: 600;
+
+  &__wrapper {
+    display: flex;
+    justify-content: center;
+    height: 20px;
+  }
+
+  &__message {
+    display: none;
+    font-size: 14px;
+
+    &--active {
+      display: block;
+    }
+  }
+
+  &__dots-container {
+    display: none;
+    position: absolute;
+    top: 50%;
+    right: 0;
+    justify-content: space-between;
+    width: 32px;
+    transform: translate(0, -50%);
+  }
+
+  &__dot {
+    width: 10px;
+    height: 10px;
+    border: 1px solid $black;
+    border-radius: 50%;
+
+    &--active {
+      background-color: $black;
+    }
+  }
+}
