@@ -1,0 +1,15 @@
+.swiper-slide {
+  transition: opacity 0.5s;
+
+  &-prev {
+    @media (max-width: 479px) {
+      opacity: 0.5;
+    }
+  }
+
+  &-next {
+    @media (max-width: 479px) {
+      opacity: 0.5;
+    }
+  }
+}

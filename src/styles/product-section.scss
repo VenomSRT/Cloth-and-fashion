@@ -1,0 +1,68 @@
+.product-sections {
+  display: grid;
+  row-gap: 13px;
+  padding: 67px 14px 20px;
+
+  &__container {
+    display: grid;
+    width: 100%;
+    row-gap: 13px;
+  }
+
+  &__section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    background-repeat: no-repeat;
+
+    &--jaquetas {
+      height: 214px;
+      background-image: url("../images/jaquetas-bg.jpg");
+      background-size: 189%;
+      background-position: -62px -64px;
+    }
+
+    &--shorts {
+      height: 214px;
+      background-image: url("../images/shorts-bg.jpg");
+      background-size: 186%;
+      background-position: -252px -79px;
+    }
+
+    &--corta-vento {
+      height: 165px;
+      background-image: url("../images/corta-vento-bg.jpg");
+      background-size: 140%;
+      background-position: -49px -7px;
+    }
+
+    &--camisas {
+      height: 311px;
+      background-image: url("../images/camisas-bg.jpg");
+      background-size: 276%;
+      background-position: -413px -74px;
+    }
+
+    &--calcas {
+      height: 293px;
+      background-image: url("../images/calcas-bg.jpg");
+      background-size: 233%;
+      background-position: -107px -3px;
+    }
+
+    &--camisetas {
+      height: 174px;
+      background-image: url("../images/camisetas-bg.jpg");
+      background-size: 150%;
+      background-position: -83px -53px;
+    }
+  }
+
+  &__title {
+    color: $white;
+    font-weight: 600;
+    letter-spacing: 4.5px;
+    text-shadow: 0 3px 0 #000;
+  }
+}

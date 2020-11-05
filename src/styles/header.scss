@@ -17,6 +17,7 @@
     height: 16px;
     border-top: 2px solid $white;
     border-bottom: 2px solid $white;
+    cursor: pointer;
 
     &::before {
       content: "";
@@ -42,6 +43,7 @@
     color: $white;
     text-transform: uppercase;
     transition: background-color 0.5s, color 0.5s;
+    cursor: pointer;
 
     &:hover {
       background-color: $white;
@@ -55,6 +57,7 @@
     height: 29px;
     background-image: url("../images/cart-icon-mobile.png");
     background-repeat: no-repeat;
+    cursor: pointer;
 
     &::before {
       position: absolute;
