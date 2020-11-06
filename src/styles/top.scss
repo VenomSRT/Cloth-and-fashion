@@ -2,19 +2,30 @@
   order: 2;
   position: relative;
   background-color: $gray;
-  color: $white;
-  font-size: 12px;
-  font-weight: 600;
+
+  @media (min-width: 768px) {
+    order: 0;
+  }
 
   &__wrapper {
     display: flex;
     justify-content: center;
     height: 20px;
+
+    @media (min-width: 768px) {
+      height: 14px;
+    }
   }
 
   &__message {
     display: none;
     font-size: 14px;
+    font-weight: 600;
+    color: $white;
+
+    @media (min-width: 768px) {
+      font-size: 13px;
+    }
 
     &--active {
       display: block;

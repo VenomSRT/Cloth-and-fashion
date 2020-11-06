@@ -1,0 +1,53 @@
+div .swiper-container {
+  padding-top: 17px;
+}
+
+.swiper-slide {
+  &-prev {
+    @media (max-width: 479px) {
+      opacity: 0.5;
+    }
+  }
+
+  &-next {
+    @media (max-width: 479px) {
+      opacity: 0.5;
+    }
+  }
+
+  @media (min-width: 480px) {
+    opacity: 0.5;
+
+    &-active {
+      opacity: 1;
+    }
+
+    &-prev {
+      opacity: 1;
+    }
+
+    &-next {
+      opacity: 1;
+    }
+  }
+}
+
+div .swiper-button {
+  &-prev {
+    color: #000;
+
+    &:after {
+      font-size: 20px;
+      font-weight: 900;
+    }
+  }
+
+  &-next {
+    color: #000;
+
+    &:after {
+      font-size: 20px;
+      font-weight: 900;
+    }
+  }
+}

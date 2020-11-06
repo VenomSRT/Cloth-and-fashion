@@ -7,6 +7,11 @@
   transform: translate(0, -50%);
   background-size: 40px;
   background-repeat: no-repeat;
+
+  @media (min-width: 480px) {
+    width: 54px;
+    background-size: 54px;
+  }
 }
 
 %imageOverlay {

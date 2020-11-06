@@ -1,65 +1,62 @@
 'use strict';
 
-import Swiper from 'swiper';
+import Swiper, { Navigation } from 'swiper';
 import 'swiper/swiper-bundle.css';
+
+Swiper.use([Navigation]);
+
+const productsGallery = new Swiper('.products-slider', {
+  initialSlide: 2,
+  slidesPerView: 1.95,
+  spaceBetween: 0,
+  centeredSlides: true,
+
+  breakpoints: {
+    480: {
+      slidesPerView: 3,
+    },
+    640: {
+      slidesPerView: 4,
+    },
+    768: {
+      slidesPerView: 4.5,
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+    }
+  }
+});
 
 const instaGallery = new Swiper('.insta-gallery', {
   initialSlide: 2,
   slidesPerView: 2,
   spaceBetween: 0,
   centeredSlides: true,
-  pagination: {
-    el: '.swiper-pagination',
-    clickable: true,
-  },
   breakpoints: {
     480: {
       slidesPerView: 3,
     },
     640: {
-      slidesPerView: 4,
-    }
-  }
-});
-
-const productsGallery = new Swiper('.products-slider', {
-  initialSlide: 2,
-  slidesPerView: 2,
-  spaceBetween: 12,
-  centeredSlides: true,
-  pagination: {
-    el: '.swiper-pagination',
-    clickable: true,
-  },
-  breakpoints: {
-    480: {
-      slidesPerView: 3,
-      spaceBetween: 30
-    },
-    640: {
-      slidesPerView: 4,
-      spaceBetween: 40
+      slidesPerView: 4.9,
     }
   }
 });
 
 const bottomGallery = new Swiper('.bottom-gallery', {
   initialSlide: 1,
-  slidesPerView: 2,
+  slidesPerView: 1.7,
   spaceBetween: 0,
   centeredSlides: true,
-  pagination: {
-    el: '.swiper-pagination',
-    clickable: true,
-  },
   breakpoints: {
     480: {
-      slidesPerView: 3,
-      spaceBetween: 30
+      slidesPerView: 2,
     },
     640: {
+      slidesPerView: 3,
+    },
+    768: {
       slidesPerView: 4,
-      spaceBetween: 40
     }
   }
 });
@@ -95,12 +92,20 @@ function showDivs(n) {
   }
 
   for (i = 0; i < sliders.length; i++) {
-    sliders[i].style.display = "none";
+    sliders[i].style.opacity = "0";
   }
 
   for (i = 0; i < dots.length; i++) {
     dots[i].className = dots[i].className.replace(" top-slider__dot--active", "");
   }
-  sliders[slideIndex-1].style.display = "grid";
+  sliders[slideIndex-1].style.opacity = "1";
   dots[slideIndex-1].className += " top-slider__dot--active";
 }
+
+setInterval(() => {
+  showDivs(slideIndex);
+  if (slideIndex > sliders.length) {
+    slideIndex = 0;
+  }
+  slideIndex++;
+}, 5000);

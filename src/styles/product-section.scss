@@ -3,14 +3,35 @@
   row-gap: 13px;
   padding: 67px 14px 20px;
 
+  @media (min-width: 768px) {
+    row-gap: 17px;
+    padding-bottom: 29px;
+  }
+
   &__container {
     display: grid;
     width: 100%;
     row-gap: 13px;
+
+    @media (min-width: 768px) {
+      column-gap: 17px;
+
+      &--1 {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      &--2 {
+        grid-template-columns: 2fr 1fr;
+      }
+
+      &--3 {
+        grid-template-columns: 1fr 2fr;
+      }
+    }
   }
 
   &__section {
-    display: flex;
+    display: grid;
     justify-content: center;
     align-items: center;
     width: 100%;
@@ -21,6 +42,10 @@
       background-image: url("../images/jaquetas-bg.jpg");
       background-size: 189%;
       background-position: -62px -64px;
+
+      @media (min-width: 768px) {
+        background-position: -73px -73px;
+      }
     }
 
     &--shorts {
@@ -28,6 +53,11 @@
       background-image: url("../images/shorts-bg.jpg");
       background-size: 186%;
       background-position: -252px -79px;
+
+      @media (min-width: 768px) {
+        background-size: 185%;
+        background-position: -299px -87px;
+      }
     }
 
     &--corta-vento {
@@ -35,6 +65,10 @@
       background-image: url("../images/corta-vento-bg.jpg");
       background-size: 140%;
       background-position: -49px -7px;
+
+      @media (min-width: 768px) {
+        background-position: -85px -10px;
+      }
     }
 
     &--camisas {
@@ -42,6 +76,15 @@
       background-image: url("../images/camisas-bg.jpg");
       background-size: 276%;
       background-position: -413px -74px;
+
+      @media (min-width: 480px) {
+        background-position: -713px -124px;
+      }
+
+      @media (min-width: 768px) {
+        background-size: 292%;
+        background-position: -357px -63px;
+      }
     }
 
     &--calcas {
@@ -49,6 +92,11 @@
       background-image: url("../images/calcas-bg.jpg");
       background-size: 233%;
       background-position: -107px -3px;
+
+      @media (min-width: 768px) {
+        background-size: 246%;
+        background-position: -85px 8px;
+      }
     }
 
     &--camisetas {
@@ -56,6 +104,14 @@
       background-image: url("../images/camisetas-bg.jpg");
       background-size: 150%;
       background-position: -83px -53px;
+
+      @media (min-width: 768px) {
+        background-position: -119px -88px;
+      }
+    }
+
+    @media (min-width: 768px) {
+      height: 264px;
     }
   }
 
@@ -64,5 +120,9 @@
     font-weight: 600;
     letter-spacing: 4.5px;
     text-shadow: 0 3px 0 #000;
+
+    @media (min-width: 480px) {
+      font-size: 20px;
+    }
   }
 }

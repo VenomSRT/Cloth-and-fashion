@@ -1,17 +1,43 @@
 .top-slider {
   order: 3;
+  min-height: 195px;
+  height: 50vw;
   position: relative;
 
+  @media (min-width: 768px) {
+    order: 1;
+    min-height: 457px;
+  }
+
+  &__container {
+    position: relative;
+  }
+
   &__slide {
-    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
     grid-template-rows: 1fr 35px;
     min-height: 195px;
+    height: 50vw;
     background-repeat: no-repeat;
+    opacity: 0;
+    transition: opacity 1s;
+
+    @media (min-width: 768px) {
+      min-height: 457px;
+    }
 
     &--1 {
       background-image: url("../images/slide-1.jpg");
       background-size: 181%;
       background-position: -86px -49px;
+
+      @media (min-width: 768px) {
+        background-size: 140%;
+        background-position: -159px -12px;
+      }
     }
 
     &--2 {
@@ -29,7 +55,7 @@
     &--4 {
       background-image: url("../images/slide-4.jpg");
       background-size: 181%;
-      background-position: -86px -49px;
+      background-position: -186px -49px;
     }
 
     &--5 {
@@ -40,10 +66,22 @@
   }
 
   &__content {
+    position: absolute;
+    top: 54%;
+    left: 3vw;
+    transform: translate(0, -50%);
     display: grid;
     justify-items: center;
-    grid-template-columns: 50%;
     grid-template-rows: 1fr 27px 57px;
+
+    @media (min-width: 480px) {
+      left: 20vw;
+    }
+
+    @media (min-width: 768px) {
+      left: 8vw;
+      top: 51%;
+    }
 
     &--2 {
       color: $white;
@@ -70,6 +108,14 @@
     line-height: 20px;
     font-weight: 400;
     border-bottom: 1px solid $black;
+
+    @media (min-width: 480px) {
+      font-size: 23px;
+    }
+
+    @media (min-width: 768px) {
+      padding-bottom: 6px;
+    }
   }
 
   &__bolder {
@@ -80,6 +126,10 @@
     padding-top: 3px;
     font-family: "Courier New", Courier, monospace;
     font-size: 11px;
+
+    @media (min-width: 480px) {
+      font-size: 15px;
+    }
   }
 
   &__button {
@@ -90,6 +140,15 @@
     font-weight: 500;
     line-height: 19px;
     background-color: transparent;
+    cursor: pointer;
+
+    @media (min-width: 480px) {
+      font-size: 16px;
+    }
+
+    @media (min-width: 768px) {
+      align-self: center;
+    }
 
     &--2 {
       color: $white;
@@ -119,6 +178,10 @@
     display: flex;
     justify-content: center;
     padding: 11px 0;
+
+    @media (min-width: 768px) {
+      padding: 15px 0;
+    }
   }
 
   &__dots-container {

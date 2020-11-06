@@ -3,12 +3,24 @@
   position: relative;
   background-color: $black;
 
+  @media (min-width: 768px) {
+    order: 2;
+  }
+
   &__wrapper {
     display: flex;
     justify-content: space-between;
     align-items: center;
     height: 50px;
     padding-right: 4px;
+
+    @media (min-width: 768px) {
+      display: grid;
+      grid-template-columns: 123px 1fr 123px;
+      padding-right: 7px;
+      padding-left: 12px;
+      height: 38px;
+    }
   }
 
   &__menu-burger {
@@ -34,16 +46,34 @@
   &__site-title {
     color: $white;
     font-size: 27px;
+
+    @media (min-width: 768px) {
+      justify-self: center;
+    }
+  }
+
+  &__misc-container {
+    display: flex;
+    justify-content: space-between;
+
+    @media (min-width: 768px) {
+      width: 123px;
+    }
   }
 
   &__login {
     display: none;
     background-color: $black;
     border: none;
+    font-size: 22px;
     color: $white;
     text-transform: uppercase;
     transition: background-color 0.5s, color 0.5s;
     cursor: pointer;
+
+    @media (min-width: 768px) {
+      display: block;
+    }
 
     &:hover {
       background-color: $white;
