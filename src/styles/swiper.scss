@@ -30,11 +30,28 @@ div .swiper-container {
       opacity: 1;
     }
   }
+
+  @media (min-width: 1080px) {
+    opacity: 1;
+  }
 }
 
 div .swiper-button {
   &-prev {
     color: #000;
+
+    @media (min-width: 1080px) {
+      display: flex;
+      left: 0;
+      height: 100%;
+      width: 150px;
+      transform: translate(0, -50%);
+      background: linear-gradient(
+        90deg,
+        rgba(255,255,255,1) 0%,
+        rgba(255,255,255,0) 100%
+      );
+    }
 
     &:after {
       font-size: 20px;
@@ -44,6 +61,19 @@ div .swiper-button {
 
   &-next {
     color: #000;
+
+    @media (min-width: 1080px) {
+      display: flex;
+      right: 0;
+      height: 100%;
+      width: 150px;
+      transform: translate(0, -50%);
+      background: linear-gradient(
+        90deg,
+        rgba(255,255,255,0) 0%,
+        rgba(255,255,255,1) 100%
+      );
+    }
 
     &:after {
       font-size: 20px;

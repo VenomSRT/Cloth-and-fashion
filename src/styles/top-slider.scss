@@ -7,6 +7,7 @@
   @media (min-width: 768px) {
     order: 1;
     min-height: 457px;
+    max-height: 706px;
   }
 
   &__container {
@@ -27,6 +28,7 @@
 
     @media (min-width: 768px) {
       min-height: 457px;
+      max-height: 706px;
     }
 
     &--1 {
@@ -38,30 +40,63 @@
         background-size: 140%;
         background-position: -159px -12px;
       }
+
+      @media (min-width: 1280px) {
+        background-size: 120%;
+        background-position: -6px -13px;
+      }
+
+      @media (min-width: 1600px) {
+        background-size: 101%;
+      }
     }
 
     &--2 {
       background-image: url("../images/slide-2.jpg");
       background-size: 181%;
       background-position: -86px -49px;
+
+      @media (min-width: 1280px) {
+        background-size: 120%;
+      }
     }
 
     &--3 {
       background-image: url("../images/slide-3.jpg");
       background-size: 181%;
       background-position: -86px -49px;
+
+      @media (min-width: 1280px) {
+        background-size: 120%;
+      }
     }
 
     &--4 {
       background-image: url("../images/slide-4.jpg");
       background-size: 181%;
       background-position: -186px -49px;
+
+      @media (min-width: 1280px) {
+        background-size: 120%;
+      }
     }
 
     &--5 {
       background-image: url("../images/slide-5.jpg");
       background-size: 181%;
       background-position: -86px -49px;
+
+      @media (min-width: 1280px) {
+        background-size: 120%;
+      }
+    }
+  }
+
+  &__wrapper {
+    @media (min-width: 1280px) {
+      position: relative;
+      max-width: 1280px;
+      margin: 0 auto;
     }
   }
 
@@ -81,6 +116,12 @@
     @media (min-width: 768px) {
       left: 8vw;
       top: 51%;
+    }
+
+    @media (min-width: 1280px) {
+      grid-template-rows: 1fr 27px 125px;
+      left: 60px;
+      top: 370px;
     }
 
     &--2 {
@@ -116,6 +157,11 @@
     @media (min-width: 768px) {
       padding-bottom: 6px;
     }
+
+    @media (min-width: 1280px) {
+      font-size: 35px;
+      padding: 0 57px 15px;
+    }
   }
 
   &__bolder {
@@ -130,10 +176,13 @@
     @media (min-width: 480px) {
       font-size: 15px;
     }
+
+    @media (min-width: 1280px) {
+      font-size: 24px;
+    }
   }
 
   &__button {
-    width: 76px;
     height: 23px;
     border: 2px solid $black;
     text-transform: uppercase;
@@ -148,6 +197,12 @@
 
     @media (min-width: 768px) {
       align-self: center;
+    }
+
+    @media (min-width: 1280px) {
+      height: auto;
+      padding: 7px 10px;
+      font-size: 27px;
     }
 
     &--2 {
@@ -182,12 +237,20 @@
     @media (min-width: 768px) {
       padding: 15px 0;
     }
+
+    @media (min-width: 1280px) {
+      padding: 25px 0;
+    }
   }
 
   &__dots-container {
     display: flex;
     justify-content: space-between;
     width: 75px;
+
+    @media (min-width: 1280px) {
+      width: 112px;
+    }
   }
 
   &__dot {
@@ -196,6 +259,11 @@
     background-color: $white;
     border: 1px solid #929292;
     border-radius: 50%;
+
+    @media (min-width: 1280px) {
+      width: 19px;
+      height: 19px;
+    }
 
     &--active {
       background-color: $black;

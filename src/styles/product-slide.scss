@@ -4,6 +4,29 @@
   width: 100%;
   padding: 0 6px;
 
+  &__to-compare {
+    display: none;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    bottom: 6px;
+    left: 0;
+    right: 0;
+    height: 28px;
+    background-color: rgba($color: #000, $alpha: 0.5);
+    z-index: 1;
+    color: $white;
+    cursor: pointer;
+  }
+
+  &__image-container {
+    position: relative;
+
+    &:hover > .product-slide__to-compare {
+      display: flex;
+    }
+  }
+
   &__image {
     width: 100%;
     position: relative;

@@ -8,6 +8,14 @@
     padding-bottom: 29px;
   }
 
+  @media (min-width: 1260px) {
+    max-width: 1260px;
+    margin: 0 auto;
+    padding-top: 75px;
+    padding-bottom: 68px;
+    row-gap: 28px;
+  }
+
   &__container {
     display: grid;
     width: 100%;
@@ -28,6 +36,10 @@
         grid-template-columns: 1fr 2fr;
       }
     }
+
+    @media (min-width: 1260px) {
+      column-gap: 28px;
+    }
   }
 
   &__section {
@@ -46,6 +58,10 @@
       @media (min-width: 768px) {
         background-position: -73px -73px;
       }
+
+      @media (min-width: 1260px) {
+        background-position: -115px -133px;
+      }
     }
 
     &--shorts {
@@ -58,6 +74,10 @@
         background-size: 185%;
         background-position: -299px -87px;
       }
+
+      @media (min-width: 1260px) {
+        background-position: -506px -152px;
+      }
     }
 
     &--corta-vento {
@@ -68,6 +88,10 @@
 
       @media (min-width: 768px) {
         background-position: -85px -10px;
+      }
+
+      @media (min-width: 1260px) {
+        background-position: -139px -19px;
       }
     }
 
@@ -85,6 +109,10 @@
         background-size: 292%;
         background-position: -357px -63px;
       }
+
+      @media (min-width: 1260px) {
+        background-position: -607px -109px;
+      }
     }
 
     &--calcas {
@@ -97,6 +125,10 @@
         background-size: 246%;
         background-position: -85px 8px;
       }
+
+      @media (min-width: 1260px) {
+        background-position: -134px -22px;
+      }
     }
 
     &--camisetas {
@@ -108,10 +140,18 @@
       @media (min-width: 768px) {
         background-position: -119px -88px;
       }
+
+      @media (min-width: 1260px) {
+        background-position: -200px -181px;
+      }
     }
 
     @media (min-width: 768px) {
       height: 264px;
+    }
+
+    @media (min-width: 1260px) {
+      height: 446px;
     }
   }
 
@@ -123,6 +163,10 @@
 
     @media (min-width: 480px) {
       font-size: 20px;
+    }
+
+    @media (min-width: 1260px) {
+      font-size: 30px;
     }
   }
 }

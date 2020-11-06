@@ -1,4 +1,8 @@
 .insta-gallery {
+  @media (min-width: 1260px) {
+    padding-top: 37px;
+  }
+
   &__image-container {
     position: relative;
     display: flex;

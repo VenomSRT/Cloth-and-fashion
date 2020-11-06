@@ -18,17 +18,24 @@
   }
 
   &__message {
-    display: none;
+    position: absolute;
+    opacity: 0;
     font-size: 14px;
     font-weight: 600;
     color: $white;
+    transition: top 0.5s;
 
     @media (min-width: 768px) {
       font-size: 13px;
     }
 
+    @media (min-width: 1280px) {
+      font-size: 12px;
+      letter-spacing: 1.2px;
+    }
+
     &--active {
-      display: block;
+      opacity: 1;
     }
   }
 
@@ -40,11 +47,16 @@
     justify-content: space-between;
     width: 32px;
     transform: translate(0, -50%);
+
+    @media (min-width: 1280px) {
+      display: flex;
+      right: 16px;
+    }
   }
 
   &__dot {
-    width: 10px;
-    height: 10px;
+    width: 9px;
+    height: 9px;
     border: 1px solid $black;
     border-radius: 50%;
 

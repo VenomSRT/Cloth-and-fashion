@@ -1,3 +1,94 @@
 .footer {
+  order: 4;
   display: none;
+  height: 38px;
+  background-color: $black;
+  border: 1px solid #bbb;
+
+  @media (min-width: 768px) {
+    display: flex;
+  }
+
+  &__content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 0 15px 0 10px;
+
+    @media (min-width: 1280px) {
+      padding: 0 24px 0 29px;
+    }
+  }
+
+  &__menu-list {
+    display: flex;
+    justify-content: space-between;
+    min-width: 481px;
+
+    @media (min-width: 1280px) {
+      min-width: 553px;
+    }
+  }
+
+  &__menu-item {
+    display: flex;
+
+  }
+
+  &__menu-link {
+    color: $white;
+
+    @media (min-width: 1280px) {
+      letter-spacing: 0.7px;
+    }
+  }
+
+  &__soc-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 58px;
+
+    @media (min-width: 1280px) {
+      width: 85px;
+    }
+  }
+
+  &__soc-link {
+    display: inline-block;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+
+    &--facebook {
+      width: 8px;
+      height: 23px;
+      background-image: url("../images/facebook-icon.png");
+
+      @media (min-width: 1280px) {
+        width: 12px;
+      }
+    }
+
+    &--twitter {
+      width: 22px;
+      height: 20px;
+      background-image: url("../images/twitter-icon.png");
+
+      @media (min-width: 1280px) {
+        width: 29px;
+      }
+    }
+
+    &--instagram {
+      width: 17px;
+      height: 23px;
+      background-image: url("../images/insta-icon.png");
+
+      @media (min-width: 1280px) {
+        width: 23px;
+      }
+    }
+  }
 }

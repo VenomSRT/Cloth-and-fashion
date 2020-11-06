@@ -13,13 +13,13 @@
   <body>
     <div class="top">
       <div class="top__wrapper wrapper">
-        <div class="top__message top__message--active">Frete grãtis para compras acima de r$300,00</div>
-        <div class="top__message">Frete para compras acima grãtis de r$500,00</div>
-        <div class="top__message">Frete acima grãtis para compras de r$100,00</div>
+        <div class="top__message top__message--active top__message--1">Frete grãtis para compras acima de r$300,00</div>
+        <div class="top__message top__message--2">Frete para compras acima grãtis de r$500,00</div>
+        <div class="top__message top__message--3">Frete acima grãtis para compras de r$100,00</div>
         <div class="top__dots-container">
-          <div class="top__dot"></div>
-          <div class="top__dot top__dot--active"></div>
-          <div class="top__dot"></div>
+          <div class="top__dot top__dot--active top__dot--1"></div>
+          <div class="top__dot top__dot--2"></div>
+          <div class="top__dot top__dot--3"></div>
         </div>
       </div>
     </div>
@@ -27,63 +27,73 @@
     <article class="top-slider">
       <div class="top-slider__container">
         <div class="top-slider__slide top-slider__slide--1">
-          <section class="top-slider__content top-slider__content--1">
-            <h1 class="top-slider__title">
-              <span class="top-slider__bolder">C&F</span> clothing
-            </h1>
-            <p class="top-slider__desctiption">sports & lifestyle</p>
-            <button class="top-slider__button top-slider__button--1">
-              Confira
-            </button>
-          </section>
+          <div class="top-slider__wrapper">
+            <section class="top-slider__content top-slider__content--1">
+              <h1 class="top-slider__title">
+                <span class="top-slider__bolder">C&F</span> clothing
+              </h1>
+              <p class="top-slider__desctiption">sports & lifestyle</p>
+              <button class="top-slider__button top-slider__button--1">
+                Confira
+              </button>
+            </section>
+          </div>
         </div>
 
         <div class="top-slider__slide top-slider__slide--2">
-          <section class="top-slider__content top-slider__content--2">
-            <h1 class="top-slider__title">
-              <span class="top-slider__bolder">C&F</span> clothing
-            </h1>
-            <p class="top-slider__desctiption">sports & lifestyle</p>
-            <button class="top-slider__button top-slider__button--2">
-              Confira
-            </button>
-          </section>
+          <div class="top-slider__wrapper">
+            <section class="top-slider__content top-slider__content--2">
+              <h1 class="top-slider__title">
+                <span class="top-slider__bolder">C&F</span> clothing
+              </h1>
+              <p class="top-slider__desctiption">sports & lifestyle</p>
+              <button class="top-slider__button top-slider__button--2">
+                Confira
+              </button>
+            </section>
+          </div>
         </div>
 
         <div class="top-slider__slide top-slider__slide--3">
-          <section class="top-slider__content top-slider__content--3">
-            <h1 class="top-slider__title">
-              <span class="top-slider__bolder">C&F</span> clothing
-            </h1>
-            <p class="top-slider__desctiption">sports & lifestyle</p>
-            <button class="top-slider__button top-slider__button--3">
-              Confira
-            </button>
-          </section>
+          <div class="top-slider__wrapper">
+            <section class="top-slider__content top-slider__content--3">
+              <h1 class="top-slider__title">
+                <span class="top-slider__bolder">C&F</span> clothing
+              </h1>
+              <p class="top-slider__desctiption">sports & lifestyle</p>
+              <button class="top-slider__button top-slider__button--3">
+                Confira
+              </button>
+            </section>
+          </div>
         </div>
 
         <div class="top-slider__slide top-slider__slide--4">
-          <section class="top-slider__content top-slider__content--4">
-            <h1 class="top-slider__title">
-              <span class="top-slider__bolder">C&F</span> clothing
-            </h1>
-            <p class="top-slider__desctiption">sports & lifestyle</p>
-            <button class="top-slider__button top-slider__button--4">
-              Confira
-            </button>
-          </section>
+          <div class="top-slider__wrapper">
+            <section class="top-slider__content top-slider__content--4">
+              <h1 class="top-slider__title">
+                <span class="top-slider__bolder">C&F</span> clothing
+              </h1>
+              <p class="top-slider__desctiption">sports & lifestyle</p>
+              <button class="top-slider__button top-slider__button--4">
+                Confira
+              </button>
+            </section>
+          </div>
         </div>
 
         <div class="top-slider__slide top-slider__slide--5">
-          <section class="top-slider__content top-slider__content--5">
-            <h1 class="top-slider__title">
-              <span class="top-slider__bolder">C&F</span> clothing
-            </h1>
-            <p class="top-slider__desctiption">sports & lifestyle</p>
-            <button class="top-slider__button top-slider__button--5">
-              Confira
-            </button>
-          </section>
+          <div class="top-slider__wrapper">
+            <section class="top-slider__content top-slider__content--5">
+              <h1 class="top-slider__title">
+                <span class="top-slider__bolder">C&F</span> clothing
+              </h1>
+              <p class="top-slider__desctiption">sports & lifestyle</p>
+              <button class="top-slider__button top-slider__button--5">
+                Confira
+              </button>
+            </section>
+          </div>
         </div>
       </div>
       <div class="top-slider__controls">
@@ -144,11 +154,16 @@
             <div class="products-slider__container swiper-wrapper">
               <div class="swiper-slide">
                 <div class="products-slider__product-slide product-slide">
-                  <img
-                    src="./images/product-1.jpg"
-                    alt="t-shirt image"
-                    class="product-slide__image"
-                  >
+                  <div class="product-slide__image-container">
+                    <img
+                      src="./images/product-1.jpg"
+                      alt="t-shirt image"
+                      class="product-slide__image"
+                    >
+                    <div class="product-slide__to-compare">
+                      Comprar
+                    </div>
+                  </div>
                   <p class="product-slide__price">
                     <span class="product-slide__old-price">R$98,88</span>
                     <span class="product-slide__value">R$88,88</span>
@@ -158,11 +173,16 @@
 
               <div class="swiper-slide">
                 <div class="products-slider__product-slide product-slide">
-                  <img
-                    src="./images/product-2.jpg"
-                    alt="t-shirt image"
-                    class="product-slide__image"
-                  >
+                  <div class="product-slide__image-container">
+                    <img
+                      src="./images/product-2.jpg"
+                      alt="t-shirt image"
+                      class="product-slide__image"
+                    >
+                    <div class="product-slide__to-compare">
+                      Comprar
+                    </div>
+                  </div>
                   <div class="product-slide__lable-container"></div>
                   <p class="product-slide__price">
                     <span class="product-slide__old-price">R$98,88</span>
@@ -172,12 +192,17 @@
               </div>
 
               <div class="swiper-slide">
-                <div class="products-slider__product-slide product-slide">
-                  <img
-                    src="./images/product-3v1.jpg"
-                    alt="t-shirt image"
-                    class="product-slide__image"
-                  >
+                <div class="products-slider__product-slide product-slide product-slide--multiple">
+                  <div class="product-slide__image-container">
+                    <img
+                      src="./images/product-3v3.jpg"
+                      alt="t-shirt image"
+                      class="product-slide__image"
+                    >
+                    <div class="product-slide__to-compare">
+                      Comprar
+                    </div>
+                  </div>
                   <div class="product-slide__lable-container">
                     <div class="product-slide__lable">20%</div>
                     <div class="product-slide__lable-back"></div>
@@ -191,11 +216,16 @@
 
               <div class="swiper-slide">
                 <div class="products-slider__product-slide product-slide">
-                  <img
-                    src="./images/product-4.jpg"
-                    alt="t-shirt image"
-                    class="product-slide__image"
-                  >
+                  <div class="product-slide__image-container">
+                    <img
+                      src="./images/product-4.jpg"
+                      alt="t-shirt image"
+                      class="product-slide__image"
+                    >
+                    <div class="product-slide__to-compare">
+                      Comprar
+                    </div>
+                  </div>
                   <div class="product-slide__lable-container"></div>
                   <p class="product-slide__price">
                     <span class="product-slide__old-price">R$98,88</span>
@@ -206,11 +236,16 @@
 
               <div class="swiper-slide">
                 <div class="products-slider__product-slide product-slide">
-                  <img
-                    src="./images/product-5.jpg"
-                    alt="t-shirt image"
-                    class="product-slide__image"
-                  >
+                  <div class="product-slide__image-container">
+                    <img
+                      src="./images/product-5.jpg"
+                      alt="t-shirt image"
+                      class="product-slide__image"
+                    >
+                    <div class="product-slide__to-compare">
+                      Comprar
+                    </div>
+                  </div>
                   <div class="product-slide__lable-container">
                     <div class="product-slide__lable">20%</div>
                     <div class="product-slide__lable-back"></div>
@@ -224,11 +259,140 @@
 
               <div class="swiper-slide">
                 <div class="products-slider__product-slide product-slide">
-                  <img
-                    src="./images/product-6.jpg"
-                    alt="t-shirt image"
-                    class="product-slide__image"
-                  >
+                  <div class="product-slide__image-container">
+                    <img
+                      src="./images/product-6.jpg"
+                      alt="t-shirt image"
+                      class="product-slide__image"
+                    >
+                    <div class="product-slide__to-compare">
+                      Comprar
+                    </div>
+                  </div>
+                  <p class="product-slide__price">
+                    <span class="product-slide__old-price">R$98,88</span>
+                    <span class="product-slide__value">R$88,88</span>
+                  </p>
+                </div>
+              </div>
+
+              <div class="swiper-slide">
+                <div class="products-slider__product-slide product-slide">
+                  <div class="product-slide__image-container">
+                    <img
+                      src="./images/product-1.jpg"
+                      alt="t-shirt image"
+                      class="product-slide__image"
+                    >
+                    <div class="product-slide__to-compare">
+                      Comprar
+                    </div>
+                  </div>
+                  <p class="product-slide__price">
+                    <span class="product-slide__old-price">R$98,88</span>
+                    <span class="product-slide__value">R$88,88</span>
+                  </p>
+                </div>
+              </div>
+
+              <div class="swiper-slide">
+                <div class="products-slider__product-slide product-slide">
+                  <div class="product-slide__image-container">
+                    <img
+                      src="./images/product-2.jpg"
+                      alt="t-shirt image"
+                      class="product-slide__image"
+                    >
+                    <div class="product-slide__to-compare">
+                      Comprar
+                    </div>
+                  </div>
+                  <div class="product-slide__lable-container"></div>
+                  <p class="product-slide__price">
+                    <span class="product-slide__old-price">R$98,88</span>
+                    <span class="product-slide__value">R$88,88</span>
+                  </p>
+                </div>
+              </div>
+
+              <div class="swiper-slide">
+                <div class="products-slider__product-slide product-slide">
+                  <div class="product-slide__image-container">
+                    <img
+                      src="./images/product-3v1.jpg"
+                      alt="t-shirt image"
+                      class="product-slide__image"
+                    >
+                    <div class="product-slide__to-compare">
+                      Comprar
+                    </div>
+                  </div>
+                  <div class="product-slide__lable-container">
+                    <div class="product-slide__lable">20%</div>
+                    <div class="product-slide__lable-back"></div>
+                  </div>
+                  <p class="product-slide__price">
+                    <span class="product-slide__old-price">R$98,88</span>
+                    <span class="product-slide__value">R$88,88</span>
+                  </p>
+                </div>
+              </div>
+
+              <div class="swiper-slide">
+                <div class="products-slider__product-slide product-slide">
+                  <div class="product-slide__image-container">
+                    <img
+                      src="./images/product-4.jpg"
+                      alt="t-shirt image"
+                      class="product-slide__image"
+                    >
+                    <div class="product-slide__to-compare">
+                      Comprar
+                    </div>
+                  </div>
+                  <div class="product-slide__lable-container"></div>
+                  <p class="product-slide__price">
+                    <span class="product-slide__old-price">R$98,88</span>
+                    <span class="product-slide__value">R$88,88</span>
+                  </p>
+                </div>
+              </div>
+
+              <div class="swiper-slide">
+                <div class="products-slider__product-slide product-slide">
+                  <div class="product-slide__image-container">
+                    <img
+                      src="./images/product-5.jpg"
+                      alt="t-shirt image"
+                      class="product-slide__image"
+                    >
+                    <div class="product-slide__to-compare">
+                      Comprar
+                    </div>
+                  </div>
+                  <div class="product-slide__lable-container">
+                    <div class="product-slide__lable">20%</div>
+                    <div class="product-slide__lable-back"></div>
+                  </div>
+                  <p class="product-slide__price">
+                    <span class="product-slide__old-price">R$98,88</span>
+                    <span class="product-slide__value">R$88,88</span>
+                  </p>
+                </div>
+              </div>
+
+              <div class="swiper-slide">
+                <div class="products-slider__product-slide product-slide">
+                  <div class="product-slide__image-container">
+                    <img
+                      src="./images/product-6.jpg"
+                      alt="t-shirt image"
+                      class="product-slide__image"
+                    >
+                    <div class="product-slide__to-compare">
+                      Comprar
+                    </div>
+                  </div>
                   <p class="product-slide__price">
                     <span class="product-slide__old-price">R$98,88</span>
                     <span class="product-slide__value">R$88,88</span>
@@ -279,8 +443,73 @@
           <div class="main__title-container">
             <h3 class="main__title">Galeria do instagram</h3>
           </div>
-          <div class="main__gallery-container insta-gallery swiper-container">
+          <div class="main__gallery-container insta-gallery swiper-container wrapper">
             <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="insta-gallery__image-container">
+                  <img
+                    src="./images/insta-1.jpg"
+                    alt="instagram photo"
+                    class="insta-gallery__image"
+                  >
+                  <div class="insta-gallery__overlay">
+                    <p class="insta-gallery__likes"></p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="swiper-slide">
+                <div class="insta-gallery__image-container">
+                  <img
+                    src="./images/insta-2.jpg"
+                    alt="instagram photo"
+                    class="insta-gallery__image"
+                  >
+                  <div class="insta-gallery__overlay">
+                    <p class="insta-gallery__likes">1.323 likes</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="swiper-slide">
+                <div class="insta-gallery__image-container">
+                  <img
+                    src="./images/insta-3.jpg"
+                    alt="instagram photo"
+                    class="insta-gallery__image"
+                  >
+                  <div class="insta-gallery__overlay">
+                    <p class="insta-gallery__likes">1.323 likes</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="swiper-slide">
+                <div class="insta-gallery__image-container">
+                  <img
+                    src="./images/insta-4.jpg"
+                    alt="instagram photo"
+                    class="insta-gallery__image"
+                  >
+                  <div class="insta-gallery__overlay">
+                    <p class="insta-gallery__likes">1.323 likes</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="swiper-slide">
+                <div class="insta-gallery__image-container">
+                  <img
+                    src="./images/insta-5.jpg"
+                    alt="instagram photo"
+                    class="insta-gallery__image"
+                  >
+                  <div class="insta-gallery__overlay">
+                    <p class="insta-gallery__likes">1.323 likes</p>
+                  </div>
+                </div>
+              </div>
+
               <div class="swiper-slide">
                 <div class="insta-gallery__image-container">
                   <img
@@ -347,92 +576,144 @@
               </div>
             </div>
           </div>
+        </div>
 
-          <div class="main__bottom-gallery">
-            <div class="main__title-container">
-              <h3 class="main__title">Quem USA</h3>
-            </div>
-            <div class="main__gallery-container bottom-gallery swiper-container">
-              <div class="swiper-wrapper">
-                <div class="swiper-slide">
-                  <div class="bottom-gallery__image-container">
-                    <img
-                      src="./images/usa-image-1.jpg"
-                      alt="gallery photo"
-                      class="bottom-gallery__image"
-                    >
-                    <div class="bottom-gallery__overlay">
-                      <p class="bottom-gallery__description"></p>
-                    </div>
+        <div class="main__bottom-gallery">
+          <div class="main__title-container">
+            <h3 class="main__title">Quem USA</h3>
+          </div>
+          <div class="main__gallery-container bottom-gallery swiper-container wrapper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="bottom-gallery__image-container">
+                  <img
+                    src="./images/usa-image-1.jpg"
+                    alt="gallery photo"
+                    class="bottom-gallery__image"
+                  >
+                  <div class="bottom-gallery__overlay">
+                    <p class="bottom-gallery__description"></p>
                   </div>
                 </div>
+              </div>
 
-                <div class="swiper-slide">
-                  <div class="bottom-gallery__image-container">
-                    <img
-                      src="./images/usa-image-2.jpg"
-                      alt="gallery photo"
-                      class="bottom-gallery__image"
-                    >
-                    <div class="bottom-gallery__overlay">
-                      <p class="bottom-gallery__description">David Guetta</p>
-                    </div>
+              <div class="swiper-slide">
+                <div class="bottom-gallery__image-container">
+                  <img
+                    src="./images/usa-image-2.jpg"
+                    alt="gallery photo"
+                    class="bottom-gallery__image"
+                  >
+                  <div class="bottom-gallery__overlay">
+                    <p class="bottom-gallery__description">David Guetta</p>
                   </div>
                 </div>
+              </div>
 
-                <div class="swiper-slide">
-                  <div class="bottom-gallery__image-container">
-                    <img
-                      src="./images/usa-image-3.jpg"
-                      alt="gallery photo"
-                      class="bottom-gallery__image"
-                    >
-                    <div class="bottom-gallery__overlay">
-                      <p class="bottom-gallery__description"></p>
-                    </div>
+              <div class="swiper-slide">
+                <div class="bottom-gallery__image-container">
+                  <img
+                    src="./images/usa-image-3.jpg"
+                    alt="gallery photo"
+                    class="bottom-gallery__image"
+                  >
+                  <div class="bottom-gallery__overlay">
+                    <p class="bottom-gallery__description"></p>
                   </div>
                 </div>
+              </div>
 
-                <div class="swiper-slide">
-                  <div class="bottom-gallery__image-container">
-                    <img
-                      src="./images/usa-image-4.jpg"
-                      alt="gallery photo"
-                      class="bottom-gallery__image"
-                    >
-                    <div class="bottom-gallery__overlay">
-                      <p class="bottom-gallery__description"></p>
-                    </div>
+              <div class="swiper-slide">
+                <div class="bottom-gallery__image-container">
+                  <img
+                    src="./images/usa-image-4.jpg"
+                    alt="gallery photo"
+                    class="bottom-gallery__image"
+                  >
+                  <div class="bottom-gallery__overlay">
+                    <p class="bottom-gallery__description"></p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="swiper-slide">
+                <div class="bottom-gallery__image-container">
+                  <img
+                    src="./images/usa-image-1.jpg"
+                    alt="gallery photo"
+                    class="bottom-gallery__image"
+                  >
+                  <div class="bottom-gallery__overlay">
+                    <p class="bottom-gallery__description"></p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="swiper-slide">
+                <div class="bottom-gallery__image-container">
+                  <img
+                    src="./images/usa-image-2.jpg"
+                    alt="gallery photo"
+                    class="bottom-gallery__image"
+                  >
+                  <div class="bottom-gallery__overlay">
+                    <p class="bottom-gallery__description">David Guetta</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="swiper-slide">
+                <div class="bottom-gallery__image-container">
+                  <img
+                    src="./images/usa-image-3.jpg"
+                    alt="gallery photo"
+                    class="bottom-gallery__image"
+                  >
+                  <div class="bottom-gallery__overlay">
+                    <p class="bottom-gallery__description"></p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="swiper-slide">
+                <div class="bottom-gallery__image-container">
+                  <img
+                    src="./images/usa-image-4.jpg"
+                    alt="gallery photo"
+                    class="bottom-gallery__image"
+                  >
+                  <div class="bottom-gallery__overlay">
+                    <p class="bottom-gallery__description"></p>
                   </div>
                 </div>
               </div>
             </div>
           </div>
-
-          <form
-            action="#"
-            class="main__form form"
-            method="POST"
-          >
-            <h3 class="form__title">Newsletter</h3>
-            <input
-              type="text"
-              class="form__input form__name-input"
-              placeholder="NOME"
-              required
-            >
-            <input
-              type="email"
-              class="form__input form__email-input"
-              placeholder="ENDEREÇO DE EMAIL"
-            >
-            <input
-              type="submit"
-              class="form__input form__submit"
-              value="CADASTRAR"
-            >
-          </form>
         </div>
+
+        <form
+          action="#"
+          class="main__form form wrapper"
+          method="POST"
+        >
+          <h3 class="form__title">Newsletter</h3>
+          <input
+            type="text"
+            class="form__input form__name-input"
+            placeholder="NOME"
+            required
+          >
+          <input
+            type="email"
+            class="form__input form__email-input"
+            placeholder="ENDEREÇO DE EMAIL"
+          >
+          <input
+            type="submit"
+            class="form__input form__submit"
+            value="CADASTRAR"
+          >
+        </form>
 
         <div class="main__bottom-patch"></div>
       </div>

@@ -6,11 +6,19 @@
     padding-top: 23px;
   }
 
+  @media (min-width: 1280px) {
+    padding-top: 34px;
+  }
+
   &__products {
     padding-bottom: 43px;
 
     @media (min-width: 768px) {
       padding-bottom: 12px;
+    }
+
+    @media (min-width: 1280px) {
+      padding-bottom: 52px;
     }
   }
 
@@ -37,6 +45,12 @@
 
     @media (min-width: 768px) {
       padding-bottom: 0;
+    }
+
+    @media (min-width: 1280px) {
+      padding-left: 76px;
+      padding-right: 76px;
+      font-size: 24px;
     }
 
     &::before {
@@ -67,11 +81,19 @@
       background-repeat: no-repeat;
       background-position: center;
       background-size: 135px;
+
+      @media (min-width: 1280px) {
+        background-size: 100%;
+      }
     }
   }
 
   &__bottom-gallery {
     padding-top: 22px;
+
+    @media (min-width: 1260px) {
+      padding-top: 76px;
+    }
   }
 
   &__bottom-patch {
@@ -81,5 +103,9 @@
     background-repeat: no-repeat;
     background-position: center;
     background-color: #f1f1f1;
+
+    @media (min-width: 768px) {
+      display: none;
+    }
   }
 }

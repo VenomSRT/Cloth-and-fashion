@@ -4,9 +4,15 @@
   padding: 56px 15px 48px;
 
   @media (min-width: 768px) {
-    padding: 41px 10px 48px;
+    padding: 41px 10px 35px;
     column-gap: 3px;
     grid-template-columns: 133px 1fr 1fr 130px;
+  }
+
+  @media (min-width: 1000px) {
+    padding: 63px 26px 53px;
+    grid-template-columns: 226px 1fr 1fr 213px;
+    column-gap: 10px;
   }
 
   &__title {
@@ -40,6 +46,19 @@
         transform: rotate(90deg);
       }
     }
+
+    @media (min-width: 1000px) {
+      height: 54px;
+      width: 208px;
+      line-height: 57px;
+      font-size: 21px;
+
+      &::before {
+        top: 18px;
+        right: -35px;
+        border-width: 0 26px 18px;
+      }
+    }
   }
 
   &__input {
@@ -52,11 +71,19 @@
       height: 31px;
       letter-spacing: 1px;
     }
+
+    @media (min-width: 1000px) {
+      height: 54px;
+    }
   }
 
   &__name-input {
     @media (min-width: 768px) {
       font-size: 15px;
+    }
+
+    @media (min-width: 1000px) {
+      font-size: 21px;
     }
   }
 
@@ -66,6 +93,10 @@
 
     @media (min-width: 768px) {
       font-size: 14px;
+    }
+
+    @media (min-width: 1000px) {
+      font-size: 18px;
     }
   }
 
@@ -83,6 +114,14 @@
       color: $black;
       border: none;
       box-shadow: 2px 3px 0 #4f5052;
+    }
+
+    @media (min-width: 1000px) {
+      height: 51px;
+      font-size: 19px;
+      padding-top: 7px;
+      padding-left: 30px;
+      letter-spacing: 4px;
     }
   }
 }
