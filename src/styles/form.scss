@@ -35,15 +35,16 @@
         width: 0;
         height: 0;
         border-style: solid;
-        border-width: 0 15px 10px 15px;
-        border-color: transparent transparent #000 transparent;
+        border-width: 0 15px 10px;
+        border-color: transparent transparent #000;
         transform: rotate(90deg);
       }
     }
   }
 
   &__input {
-    border: 2px solid #d0d0d0;height: 40px;
+    border: 2px solid #d0d0d0;
+    height: 40px;
     text-align: center;
     font-size: 22px;
 
