@@ -48,47 +48,6 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 58px;
-
-    @media (min-width: 1280px) {
-      width: 85px;
-    }
-  }
-
-  &__soc-link {
-    display: inline-block;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: contain;
-
-    &--facebook {
-      width: 8px;
-      height: 23px;
-      background-image: url("../images/facebook-icon.png");
-
-      @media (min-width: 1280px) {
-        width: 12px;
-      }
-    }
-
-    &--twitter {
-      width: 22px;
-      height: 20px;
-      background-image: url("../images/twitter-icon.png");
-
-      @media (min-width: 1280px) {
-        width: 29px;
-      }
-    }
-
-    &--instagram {
-      width: 17px;
-      height: 23px;
-      background-image: url("../images/insta-icon.png");
-
-      @media (min-width: 1280px) {
-        width: 23px;
-      }
-    }
+    width: 85px;
   }
 }

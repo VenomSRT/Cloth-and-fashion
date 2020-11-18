@@ -110,37 +110,264 @@
     <header class="header">
       <div class="header__wrapper wrapper">
         <div class="header__menu-burger"></div>
+
         <h2 class="header__site-title">
           Cloth & fashion
         </h2>
+
         <div class="header__misc-container">
           <button class="header__login">Login</button>
           <div class="header__cart"></div>
         </div>
       </div>
+
       <nav class="header__menu menu">
+        <div class="menu__container">
+          <div class="menu__title-container">
+            <h3 class="menu__title">Menu</h3>
+            <img
+              src="./images/cross.png"
+              class="menu__cross"
+              alt="close button"
+            >
+          </div>
+        </div>
+
+        <div class="menu__container menu__container--search">
+          <div class="menu__search-container">
+            <input
+              type="text"
+              class="menu__search"
+              placeholder="O que está procurando?"
+            >
+            <input type="button" class="menu__search-button">
+          </div>
+        </div>
+
         <ul class="menu__list">
-          <li class="menu__item">
-            <a href="#" class="menu__link">Link 1</a>
+          <li class="menu__item menu__container">
+            <input
+              type="checkbox"
+              name="menu_radio"
+              class="menu__checkbox"
+              id="sobre"
+            >
+
+            <a href="#" class="menu__link">Sobre</a>
+
+            <label for="sobre" class="menu__label"></label>
+
+            <ul class="menu__submenu">
+              <li class="menu__submenu-item">
+                <div class="menu__container">
+                  <a href="#" class="menu__submenu-link">Categoria</a>
+                </div>
+              </li>
+
+              <li class="menu__submenu-item">
+                <div class="menu__container">
+                  <a href="#" class="menu__submenu-link">Categoria</a>
+                </div>
+              </li>
+
+              <li class="menu__submenu-item">
+                <div class="menu__container">
+                  <a href="#" class="menu__submenu-link">Categoria</a>
+                </div>
+              </li>
+
+              <li class="menu__submenu-item">
+                <div class="menu__container">
+                  <a href="#" class="menu__submenu-link">Categoria</a>
+                </div>
+              </li>
+            </ul>
           </li>
 
-          <li class="menu__item">
-            <a href="#" class="menu__link">Link 2</a>
+          <li class="menu__item menu__container">
+            <input
+              type="checkbox"
+              name="menu_radio"
+              class="menu__checkbox"
+              id="colecoes"
+            >
+
+            <a href="#" class="menu__link">Coleções</a>
+
+            <label for="colecoes" class="menu__label"></label>
+
+            <ul class="menu__submenu">
+              <li class="menu__submenu-item">
+                <div class="menu__container">
+                  <a href="#" class="menu__submenu-link">Categoria</a>
+                </div>
+              </li>
+
+              <li class="menu__submenu-item">
+                <div class="menu__container">
+                  <a href="#" class="menu__submenu-link">Categoria</a>
+                </div>
+              </li>
+
+              <li class="menu__submenu-item">
+                <div class="menu__container">
+                  <a href="#" class="menu__submenu-link">Categoria</a>
+                </div>
+              </li>
+
+              <li class="menu__submenu-item">
+                <div class="menu__container">
+                  <a href="#" class="menu__submenu-link">Categoria</a>
+                </div>
+              </li>
+            </ul>
           </li>
 
-          <li class="menu__item">
-            <a href="#" class="menu__link">Link 3</a>
+          <li class="menu__item menu__container">
+            <input
+              type="checkbox"
+              name="menu_radio"
+              class="menu__checkbox"
+              id="categoria"
+            >
+
+            <a href="#" class="menu__link">Categoria</a>
+
+            <label for="categoria" class="menu__label"></label>
+
+            <ul class="menu__submenu">
+              <li class="menu__submenu-item">
+                <div class="menu__container">
+                  <a href="#" class="menu__submenu-link">Categoria</a>
+                </div>
+              </li>
+
+              <li class="menu__submenu-item">
+                <div class="menu__container">
+                  <a href="#" class="menu__submenu-link">Categoria</a>
+                </div>
+              </li>
+
+              <li class="menu__submenu-item">
+                <div class="menu__container">
+                  <a href="#" class="menu__submenu-link">Categoria</a>
+                </div>
+              </li>
+
+              <li class="menu__submenu-item">
+                <div class="menu__container">
+                  <a href="#" class="menu__submenu-link">Categoria</a>
+                </div>
+              </li>
+            </ul>
           </li>
 
-          <li class="menu__item">
-            <a href="#" class="menu__link">Link 4</a>
+          <li class="menu__item menu__container">
+            <input
+              type="checkbox"
+              name="menu_radio"
+              class="menu__checkbox"
+              id="looks"
+            >
+
+            <a href="#" class="menu__link">Looks</a>
+
+            <label for="looks" class="menu__label"></label>
+
+            <ul class="menu__submenu">
+              <li class="menu__submenu-item">
+                <div class="menu__container">
+                  <a href="#" class="menu__submenu-link">Categoria</a>
+                </div>
+              </li>
+
+              <li class="menu__submenu-item">
+                <div class="menu__container">
+                  <a href="#" class="menu__submenu-link">Categoria</a>
+                </div>
+              </li>
+
+              <li class="menu__submenu-item">
+                <div class="menu__container">
+                  <a href="#" class="menu__submenu-link">Categoria</a>
+                </div>
+              </li>
+
+              <li class="menu__submenu-item">
+                <div class="menu__container">
+                  <a href="#" class="menu__submenu-link">Categoria</a>
+                </div>
+              </li>
+            </ul>
           </li>
 
-          <li class="menu__item">
-            <a href="#" class="menu__link">Link 5</a>
+          <li class="menu__item menu__container">
+            <input
+              type="checkbox"
+              name="menu_radio"
+              class="menu__checkbox"
+              id="contato"
+            >
+
+            <a href="#" class="menu__link">Contato</a>
+
+            <label for="contato" class="menu__label"></label>
+
+            <ul class="menu__submenu">
+              <li class="menu__submenu-item">
+                <div class="menu__container">
+                  <a href="#" class="menu__submenu-link">Categoria</a>
+                </div>
+              </li>
+
+              <li class="menu__submenu-item">
+                <div class="menu__container">
+                  <a href="#" class="menu__submenu-link">Categoria</a>
+                </div>
+              </li>
+
+              <li class="menu__submenu-item">
+                <div class="menu__container">
+                  <a href="#" class="menu__submenu-link">Categoria</a>
+                </div>
+              </li>
+
+              <li class="menu__submenu-item">
+                <div class="menu__container">
+                  <a href="#" class="menu__submenu-link">Categoria</a>
+                </div>
+              </li>
+            </ul>
           </li>
         </ul>
-        <button class="header__login menu__login">Login</button>
+
+        <div class="menu__container">
+          <div class="menu__soc-container soc-container">
+            <a href="#" class="soc-container__soc-link">
+              <img
+                src="./images/facebook-icon.png"
+                alt="facebook"
+                class="soc-container__image"
+              >
+            </a>
+
+            <a href="#" class="soc-container__soc-link">
+              <img
+                src="./images/twitter-icon.png"
+                alt="twitter"
+                class="soc-container__image"
+              >
+            </a>
+
+            <a href="#" class="soc-container__soc-link">
+              <img
+                src="./images/insta-icon.png"
+                alt="instagram"
+                class="soc-container__image"
+              >
+            </a>
+          </div>
+        </div>
       </nav>
     </header>
 
@@ -754,9 +981,29 @@
         </nav>
 
         <div class="footer__soc-container">
-          <a href="#" class="footer__soc-link footer__soc-link--facebook"></a>
-          <a href="#" class="footer__soc-link footer__soc-link--twitter"></a>
-          <a href="#" class="footer__soc-link footer__soc-link--instagram"></a>
+          <a href="#" class="soc-container__soc-link">
+            <img
+              src="./images/facebook-icon.png"
+              alt="facebook"
+              class="soc-container__image"
+            >
+          </a>
+
+          <a href="#" class="soc-container__soc-link">
+            <img
+              src="./images/twitter-icon.png"
+              alt="twitter"
+              class="soc-container__image"
+            >
+          </a>
+
+          <a href="#" class="soc-container__soc-link">
+            <img
+              src="./images/insta-icon.png"
+              alt="instagram"
+              class="soc-container__image"
+            >
+          </a>
         </div>
       </div>
     </footer>
