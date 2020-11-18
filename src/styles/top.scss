@@ -1,0 +1,68 @@
+.top {
+  order: 2;
+  position: relative;
+  background-color: $gray;
+
+  @media (min-width: 768px) {
+    order: 0;
+  }
+
+  &__wrapper {
+    display: flex;
+    justify-content: center;
+    height: 20px;
+
+    @media (min-width: 768px) {
+      height: 14px;
+    }
+  }
+
+  &__message {
+    position: absolute;
+    opacity: 0;
+    font-size: 14px;
+    font-weight: 600;
+    color: $white;
+    transition: top 0.5s;
+
+    @media (min-width: 768px) {
+      font-size: 13px;
+    }
+
+    @media (min-width: 1280px) {
+      font-size: 12px;
+      letter-spacing: 1.2px;
+    }
+
+    &--active {
+      opacity: 1;
+    }
+  }
+
+  &__dots-container {
+    display: none;
+    position: absolute;
+    top: 50%;
+    right: 0;
+    justify-content: space-between;
+    width: 32px;
+    transform: translate(0, -50%);
+
+    @media (min-width: 1280px) {
+      display: flex;
+      right: 16px;
+    }
+  }
+
+  &__dot {
+    width: 9px;
+    height: 9px;
+    border: 1px solid $black;
+    border-radius: 50%;
+    cursor: pointer;
+
+    &--active {
+      background-color: $black;
+    }
+  }
+}

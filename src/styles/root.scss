@@ -1,0 +1,34 @@
+@import "utils";
+@import "fonts";
+
+body {
+  font-family: "Rajdhani", sans-serif;
+  text-transform: uppercase;
+  display: flex;
+  flex-direction: column;
+}
+
+.wrapper {
+  position: relative;
+  margin: 0 auto;
+  padding: 0 13px;
+  max-width: 1280px;
+
+  @media (min-width: 768px) {
+    padding: 0 27px;
+  }
+}
+
+@import "top";
+@import "header";
+@import "menu";
+@import "top-slider";
+@import "main";
+@import "products-slider";
+@import "product-slide";
+@import "product-section";
+@import "insta-gallery";
+@import "swiper";
+@import "bottom-gallery";
+@import "form";
+@import "footer";

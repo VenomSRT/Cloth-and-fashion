@@ -1,0 +1,53 @@
+.footer {
+  order: 4;
+  display: none;
+  height: 38px;
+  background-color: $black;
+  border: 1px solid #bbb;
+
+  @media (min-width: 768px) {
+    display: flex;
+  }
+
+  &__content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 0 15px 0 10px;
+
+    @media (min-width: 1280px) {
+      padding: 0 24px 0 29px;
+    }
+  }
+
+  &__menu-list {
+    display: flex;
+    justify-content: space-between;
+    min-width: 481px;
+
+    @media (min-width: 1280px) {
+      min-width: 553px;
+    }
+  }
+
+  &__menu-item {
+    display: flex;
+
+  }
+
+  &__menu-link {
+    color: $white;
+
+    @media (min-width: 1280px) {
+      letter-spacing: 0.7px;
+    }
+  }
+
+  &__soc-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 85px;
+  }
+}

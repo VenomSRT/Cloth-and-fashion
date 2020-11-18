@@ -1,0 +1,225 @@
+.menu {
+  position: absolute;
+  top: 0;
+  left: -100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 100%;
+  padding: 0;
+  background-color: $black;
+  z-index: 2;
+  transition: left 1.5s;
+
+  @media (min-width: 442px) {
+    width: auto;
+  }
+
+  &__container {
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+
+    &--search {
+      background-color: #b1b1b1;
+    }
+  }
+
+  &__title-container {
+    display: flex;
+    flex-grow: 1;
+    max-width: $menuContainersWidth;
+    justify-content: space-between;
+    align-items: center;
+    height: 50px;
+    padding: 0 11px;
+
+    @media (min-width: 768px) {
+      height: 38px;
+    }
+
+    @media (min-width: 1280px) {
+      height: 46px;
+    }
+  }
+
+  &__title {
+    padding: 0 24px;
+    font-weight: 400;
+    color: $white;
+    letter-spacing: 1.4px;
+  }
+
+  &__cross {
+    width: 22px;
+    height: 22px;
+    cursor: pointer;
+  }
+
+  &__search-container {
+    display: flex;
+    flex-grow: 1;
+    align-items: center;
+    height: 60px;
+    max-width: 434px;
+    background-color: #b1b1b1;
+    padding: 0 11px;
+  }
+
+  &__search {
+    margin-right: 12px;
+    height: 42px;
+    width: 100%;
+    padding: 0 12px;
+    text-transform: uppercase;
+    letter-spacing: 0.8px;
+
+    &:focus {
+      outline: none;
+    }
+  }
+
+  &__search-button {
+    background-color: $black;
+    width: 46px;
+    height: 42px;
+    background-image: url("../images/search-icon.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    border: none;
+    cursor: pointer;
+
+    &:focus {
+      outline: none;
+    }
+  }
+
+  &__list {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  &__item {
+    position: relative;
+    flex-direction: column;
+    align-items: flex-end;
+    background-color: $white;
+    border-bottom: 1px solid #b1b1b1;
+  }
+
+  &__checkbox {
+    display: none;
+
+    &:checked ~ ul {
+      display: flex;
+    }
+
+    &:checked ~ label::after {
+      display: none;
+    }
+  }
+
+  &__link {
+    display: flex;
+    width: 100%;
+    max-width: $menuContainersWidth;
+    align-items: center;
+    height: 70px;
+    padding: 5px 24px;
+    font-size: 18px;
+    font-weight: 600;
+    color: $black;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+
+  &__label {
+    display: block;
+    position: absolute;
+    top: 35px;
+    right: 20px;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    transform: translate(0, -50%);
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      width: 12px;
+      height: 2px;
+      background-color: #000;
+      transform: translate(-50%, -50%);
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      top: 50%;
+      right: 50%;
+      height: 12px;
+      width: 2px;
+      background-color: #000;
+      transform: translate(50%, -50%);
+    }
+  }
+
+  &__submenu {
+    display: none;
+    position: relative;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  &__submenu-item {
+    position: relative;
+    display: flex;
+    align-items: center;
+    left: -100%;
+    width: 100%;
+    height: 49px;
+    background-color: #000;
+    border: 1px solid #bbb;
+    transition: left 1s;
+  }
+
+  &__submenu-link {
+    position: relative;
+    display: flex;
+    flex-grow: 1;
+    max-width: $menuContainersWidth;
+    height: 100%;
+    align-items: center;
+    padding-left: 24px;
+    color: #fff;
+
+    &:hover {
+      text-decoration: underline;
+    }
+
+
+    &::after {
+      content: "";
+      position: absolute;
+      top: 50%;
+      right: 26px;
+      width: 10px;
+      height: 16px;
+      background-image: url("../images/chevron.png");
+      transform: translate(0, -50%);
+    }
+  }
+
+  &__soc-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 95px;
+    padding: 5px 15px 5px 0;
+  }
+}

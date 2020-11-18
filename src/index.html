@@ -4,10 +4,1009 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Title</title>
-    <link rel="stylesheet" href="./styles/main.scss">
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    >
+    <link rel="stylesheet" href="./styles/root.scss">
   </head>
   <body>
-    <h1>Hello Mate Academy</h1>
+    <div class="top">
+      <div class="top__wrapper wrapper">
+        <div class="top__message top__message--active top__message--1">Frete grãtis para compras acima de r$300,00</div>
+        <div class="top__message top__message--2">Frete para compras acima grãtis de r$500,00</div>
+        <div class="top__message top__message--3">Frete acima grãtis para compras de r$100,00</div>
+        <div class="top__dots-container">
+          <div class="top__dot top__dot--active top__dot--1"></div>
+          <div class="top__dot top__dot--2"></div>
+          <div class="top__dot top__dot--3"></div>
+        </div>
+      </div>
+    </div>
+
+    <article class="top-slider">
+      <div class="top-slider__container">
+        <div class="top-slider__slide top-slider__slide--1">
+          <div class="top-slider__wrapper">
+            <section class="top-slider__content top-slider__content--1">
+              <h1 class="top-slider__title">
+                <span class="top-slider__bolder">C&F</span> clothing
+              </h1>
+              <p class="top-slider__desctiption">sports & lifestyle</p>
+              <button class="top-slider__button top-slider__button--1">
+                Confira
+              </button>
+            </section>
+          </div>
+        </div>
+
+        <div class="top-slider__slide top-slider__slide--2">
+          <div class="top-slider__wrapper">
+            <section class="top-slider__content top-slider__content--2">
+              <h1 class="top-slider__title">
+                <span class="top-slider__bolder">C&F</span> clothing
+              </h1>
+              <p class="top-slider__desctiption">sports & lifestyle</p>
+              <button class="top-slider__button top-slider__button--2">
+                Confira
+              </button>
+            </section>
+          </div>
+        </div>
+
+        <div class="top-slider__slide top-slider__slide--3">
+          <div class="top-slider__wrapper">
+            <section class="top-slider__content top-slider__content--3">
+              <h1 class="top-slider__title">
+                <span class="top-slider__bolder">C&F</span> clothing
+              </h1>
+              <p class="top-slider__desctiption">sports & lifestyle</p>
+              <button class="top-slider__button top-slider__button--3">
+                Confira
+              </button>
+            </section>
+          </div>
+        </div>
+
+        <div class="top-slider__slide top-slider__slide--4">
+          <div class="top-slider__wrapper">
+            <section class="top-slider__content top-slider__content--4">
+              <h1 class="top-slider__title">
+                <span class="top-slider__bolder">C&F</span> clothing
+              </h1>
+              <p class="top-slider__desctiption">sports & lifestyle</p>
+              <button class="top-slider__button top-slider__button--4">
+                Confira
+              </button>
+            </section>
+          </div>
+        </div>
+
+        <div class="top-slider__slide top-slider__slide--5">
+          <div class="top-slider__wrapper">
+            <section class="top-slider__content top-slider__content--5">
+              <h1 class="top-slider__title">
+                <span class="top-slider__bolder">C&F</span> clothing
+              </h1>
+              <p class="top-slider__desctiption">sports & lifestyle</p>
+              <button class="top-slider__button top-slider__button--5">
+                Confira
+              </button>
+            </section>
+          </div>
+        </div>
+      </div>
+      <div class="top-slider__controls">
+        <div class="top-slider__dots-container">
+          <div class="top-slider__dot top-slider__dot--1"></div>
+          <div class="top-slider__dot top-slider__dot--2"></div>
+          <div class="top-slider__dot top-slider__dot--3"></div>
+          <div class="top-slider__dot top-slider__dot--4"></div>
+          <div class="top-slider__dot top-slider__dot--5"></div>
+        </div>
+      </div>
+    </article>
+
+    <header class="header">
+      <div class="header__wrapper wrapper">
+        <div class="header__menu-burger"></div>
+
+        <h2 class="header__site-title">
+          Cloth & fashion
+        </h2>
+
+        <div class="header__misc-container">
+          <button class="header__login">Login</button>
+          <div class="header__cart"></div>
+        </div>
+      </div>
+
+      <nav class="header__menu menu">
+        <div class="menu__container">
+          <div class="menu__title-container">
+            <h3 class="menu__title">Menu</h3>
+            <img
+              src="./images/cross.png"
+              class="menu__cross"
+              alt="close button"
+            >
+          </div>
+        </div>
+
+        <div class="menu__container menu__container--search">
+          <div class="menu__search-container">
+            <input
+              type="text"
+              class="menu__search"
+              placeholder="O que está procurando?"
+            >
+            <input type="button" class="menu__search-button">
+          </div>
+        </div>
+
+        <ul class="menu__list">
+          <li class="menu__item menu__container">
+            <input
+              type="checkbox"
+              name="menu_radio"
+              class="menu__checkbox"
+              id="sobre"
+            >
+
+            <a href="#" class="menu__link">Sobre</a>
+
+            <label for="sobre" class="menu__label"></label>
+
+            <ul class="menu__submenu">
+              <li class="menu__submenu-item">
+                <div class="menu__container">
+                  <a href="#" class="menu__submenu-link">Categoria</a>
+                </div>
+              </li>
+
+              <li class="menu__submenu-item">
+                <div class="menu__container">
+                  <a href="#" class="menu__submenu-link">Categoria</a>
+                </div>
+              </li>
+
+              <li class="menu__submenu-item">
+                <div class="menu__container">
+                  <a href="#" class="menu__submenu-link">Categoria</a>
+                </div>
+              </li>
+
+              <li class="menu__submenu-item">
+                <div class="menu__container">
+                  <a href="#" class="menu__submenu-link">Categoria</a>
+                </div>
+              </li>
+            </ul>
+          </li>
+
+          <li class="menu__item menu__container">
+            <input
+              type="checkbox"
+              name="menu_radio"
+              class="menu__checkbox"
+              id="colecoes"
+            >
+
+            <a href="#" class="menu__link">Coleções</a>
+
+            <label for="colecoes" class="menu__label"></label>
+
+            <ul class="menu__submenu">
+              <li class="menu__submenu-item">
+                <div class="menu__container">
+                  <a href="#" class="menu__submenu-link">Categoria</a>
+                </div>
+              </li>
+
+              <li class="menu__submenu-item">
+                <div class="menu__container">
+                  <a href="#" class="menu__submenu-link">Categoria</a>
+                </div>
+              </li>
+
+              <li class="menu__submenu-item">
+                <div class="menu__container">
+                  <a href="#" class="menu__submenu-link">Categoria</a>
+                </div>
+              </li>
+
+              <li class="menu__submenu-item">
+                <div class="menu__container">
+                  <a href="#" class="menu__submenu-link">Categoria</a>
+                </div>
+              </li>
+            </ul>
+          </li>
+
+          <li class="menu__item menu__container">
+            <input
+              type="checkbox"
+              name="menu_radio"
+              class="menu__checkbox"
+              id="categoria"
+            >
+
+            <a href="#" class="menu__link">Categoria</a>
+
+            <label for="categoria" class="menu__label"></label>
+
+            <ul class="menu__submenu">
+              <li class="menu__submenu-item">
+                <div class="menu__container">
+                  <a href="#" class="menu__submenu-link">Categoria</a>
+                </div>
+              </li>
+
+              <li class="menu__submenu-item">
+                <div class="menu__container">
+                  <a href="#" class="menu__submenu-link">Categoria</a>
+                </div>
+              </li>
+
+              <li class="menu__submenu-item">
+                <div class="menu__container">
+                  <a href="#" class="menu__submenu-link">Categoria</a>
+                </div>
+              </li>
+
+              <li class="menu__submenu-item">
+                <div class="menu__container">
+                  <a href="#" class="menu__submenu-link">Categoria</a>
+                </div>
+              </li>
+            </ul>
+          </li>
+
+          <li class="menu__item menu__container">
+            <input
+              type="checkbox"
+              name="menu_radio"
+              class="menu__checkbox"
+              id="looks"
+            >
+
+            <a href="#" class="menu__link">Looks</a>
+
+            <label for="looks" class="menu__label"></label>
+
+            <ul class="menu__submenu">
+              <li class="menu__submenu-item">
+                <div class="menu__container">
+                  <a href="#" class="menu__submenu-link">Categoria</a>
+                </div>
+              </li>
+
+              <li class="menu__submenu-item">
+                <div class="menu__container">
+                  <a href="#" class="menu__submenu-link">Categoria</a>
+                </div>
+              </li>
+
+              <li class="menu__submenu-item">
+                <div class="menu__container">
+                  <a href="#" class="menu__submenu-link">Categoria</a>
+                </div>
+              </li>
+
+              <li class="menu__submenu-item">
+                <div class="menu__container">
+                  <a href="#" class="menu__submenu-link">Categoria</a>
+                </div>
+              </li>
+            </ul>
+          </li>
+
+          <li class="menu__item menu__container">
+            <input
+              type="checkbox"
+              name="menu_radio"
+              class="menu__checkbox"
+              id="contato"
+            >
+
+            <a href="#" class="menu__link">Contato</a>
+
+            <label for="contato" class="menu__label"></label>
+
+            <ul class="menu__submenu">
+              <li class="menu__submenu-item">
+                <div class="menu__container">
+                  <a href="#" class="menu__submenu-link">Categoria</a>
+                </div>
+              </li>
+
+              <li class="menu__submenu-item">
+                <div class="menu__container">
+                  <a href="#" class="menu__submenu-link">Categoria</a>
+                </div>
+              </li>
+
+              <li class="menu__submenu-item">
+                <div class="menu__container">
+                  <a href="#" class="menu__submenu-link">Categoria</a>
+                </div>
+              </li>
+
+              <li class="menu__submenu-item">
+                <div class="menu__container">
+                  <a href="#" class="menu__submenu-link">Categoria</a>
+                </div>
+              </li>
+            </ul>
+          </li>
+        </ul>
+
+        <div class="menu__container">
+          <div class="menu__soc-container soc-container">
+            <a href="#" class="soc-container__soc-link">
+              <img
+                src="./images/facebook-icon.png"
+                alt="facebook"
+                class="soc-container__image"
+              >
+            </a>
+
+            <a href="#" class="soc-container__soc-link">
+              <img
+                src="./images/twitter-icon.png"
+                alt="twitter"
+                class="soc-container__image"
+              >
+            </a>
+
+            <a href="#" class="soc-container__soc-link">
+              <img
+                src="./images/insta-icon.png"
+                alt="instagram"
+                class="soc-container__image"
+              >
+            </a>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="main">
+      <div class="main__wrapper">
+        <div class="main__products">
+          <div class="main__title-container">
+            <h3 class="main__title">Produtos em destaque</h3>
+          </div>
+          <div class="main__products-slider products-slider swiper-container">
+            <div class="products-slider__container swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="products-slider__product-slide product-slide">
+                  <div class="product-slide__image-container">
+                    <img
+                      src="./images/product-1.jpg"
+                      alt="t-shirt image"
+                      class="product-slide__image"
+                    >
+                    <div class="product-slide__to-compare">
+                      Comprar
+                    </div>
+                  </div>
+                  <p class="product-slide__price">
+                    <span class="product-slide__old-price">R$98,88</span>
+                    <span class="product-slide__value">R$88,88</span>
+                  </p>
+                </div>
+              </div>
+
+              <div class="swiper-slide">
+                <div class="products-slider__product-slide product-slide">
+                  <div class="product-slide__image-container">
+                    <img
+                      src="./images/product-2.jpg"
+                      alt="t-shirt image"
+                      class="product-slide__image"
+                    >
+                    <div class="product-slide__to-compare">
+                      Comprar
+                    </div>
+                  </div>
+                  <div class="product-slide__lable-container"></div>
+                  <p class="product-slide__price">
+                    <span class="product-slide__old-price">R$98,88</span>
+                    <span class="product-slide__value">R$88,88</span>
+                  </p>
+                </div>
+              </div>
+
+              <div class="swiper-slide">
+                <div class="products-slider__product-slide product-slide product-slide--multiple">
+                  <div class="product-slide__image-container">
+                    <img
+                      src="./images/product-3v3.jpg"
+                      alt="t-shirt image"
+                      class="product-slide__image"
+                    >
+                    <div class="product-slide__to-compare">
+                      Comprar
+                    </div>
+                  </div>
+                  <div class="product-slide__lable-container">
+                    <div class="product-slide__lable">20%</div>
+                    <div class="product-slide__lable-back"></div>
+                  </div>
+                  <p class="product-slide__price">
+                    <span class="product-slide__old-price">R$98,88</span>
+                    <span class="product-slide__value">R$88,88</span>
+                  </p>
+                </div>
+              </div>
+
+              <div class="swiper-slide">
+                <div class="products-slider__product-slide product-slide">
+                  <div class="product-slide__image-container">
+                    <img
+                      src="./images/product-4.jpg"
+                      alt="t-shirt image"
+                      class="product-slide__image"
+                    >
+                    <div class="product-slide__to-compare">
+                      Comprar
+                    </div>
+                  </div>
+                  <div class="product-slide__lable-container"></div>
+                  <p class="product-slide__price">
+                    <span class="product-slide__old-price">R$98,88</span>
+                    <span class="product-slide__value">R$88,88</span>
+                  </p>
+                </div>
+              </div>
+
+              <div class="swiper-slide">
+                <div class="products-slider__product-slide product-slide">
+                  <div class="product-slide__image-container">
+                    <img
+                      src="./images/product-5.jpg"
+                      alt="t-shirt image"
+                      class="product-slide__image"
+                    >
+                    <div class="product-slide__to-compare">
+                      Comprar
+                    </div>
+                  </div>
+                  <div class="product-slide__lable-container">
+                    <div class="product-slide__lable">20%</div>
+                    <div class="product-slide__lable-back"></div>
+                  </div>
+                  <p class="product-slide__price">
+                    <span class="product-slide__old-price">R$98,88</span>
+                    <span class="product-slide__value">R$88,88</span>
+                  </p>
+                </div>
+              </div>
+
+              <div class="swiper-slide">
+                <div class="products-slider__product-slide product-slide">
+                  <div class="product-slide__image-container">
+                    <img
+                      src="./images/product-6.jpg"
+                      alt="t-shirt image"
+                      class="product-slide__image"
+                    >
+                    <div class="product-slide__to-compare">
+                      Comprar
+                    </div>
+                  </div>
+                  <p class="product-slide__price">
+                    <span class="product-slide__old-price">R$98,88</span>
+                    <span class="product-slide__value">R$88,88</span>
+                  </p>
+                </div>
+              </div>
+
+              <div class="swiper-slide">
+                <div class="products-slider__product-slide product-slide">
+                  <div class="product-slide__image-container">
+                    <img
+                      src="./images/product-1.jpg"
+                      alt="t-shirt image"
+                      class="product-slide__image"
+                    >
+                    <div class="product-slide__to-compare">
+                      Comprar
+                    </div>
+                  </div>
+                  <p class="product-slide__price">
+                    <span class="product-slide__old-price">R$98,88</span>
+                    <span class="product-slide__value">R$88,88</span>
+                  </p>
+                </div>
+              </div>
+
+              <div class="swiper-slide">
+                <div class="products-slider__product-slide product-slide">
+                  <div class="product-slide__image-container">
+                    <img
+                      src="./images/product-2.jpg"
+                      alt="t-shirt image"
+                      class="product-slide__image"
+                    >
+                    <div class="product-slide__to-compare">
+                      Comprar
+                    </div>
+                  </div>
+                  <div class="product-slide__lable-container"></div>
+                  <p class="product-slide__price">
+                    <span class="product-slide__old-price">R$98,88</span>
+                    <span class="product-slide__value">R$88,88</span>
+                  </p>
+                </div>
+              </div>
+
+              <div class="swiper-slide">
+                <div class="products-slider__product-slide product-slide">
+                  <div class="product-slide__image-container">
+                    <img
+                      src="./images/product-3v1.jpg"
+                      alt="t-shirt image"
+                      class="product-slide__image"
+                    >
+                    <div class="product-slide__to-compare">
+                      Comprar
+                    </div>
+                  </div>
+                  <div class="product-slide__lable-container">
+                    <div class="product-slide__lable">20%</div>
+                    <div class="product-slide__lable-back"></div>
+                  </div>
+                  <p class="product-slide__price">
+                    <span class="product-slide__old-price">R$98,88</span>
+                    <span class="product-slide__value">R$88,88</span>
+                  </p>
+                </div>
+              </div>
+
+              <div class="swiper-slide">
+                <div class="products-slider__product-slide product-slide">
+                  <div class="product-slide__image-container">
+                    <img
+                      src="./images/product-4.jpg"
+                      alt="t-shirt image"
+                      class="product-slide__image"
+                    >
+                    <div class="product-slide__to-compare">
+                      Comprar
+                    </div>
+                  </div>
+                  <div class="product-slide__lable-container"></div>
+                  <p class="product-slide__price">
+                    <span class="product-slide__old-price">R$98,88</span>
+                    <span class="product-slide__value">R$88,88</span>
+                  </p>
+                </div>
+              </div>
+
+              <div class="swiper-slide">
+                <div class="products-slider__product-slide product-slide">
+                  <div class="product-slide__image-container">
+                    <img
+                      src="./images/product-5.jpg"
+                      alt="t-shirt image"
+                      class="product-slide__image"
+                    >
+                    <div class="product-slide__to-compare">
+                      Comprar
+                    </div>
+                  </div>
+                  <div class="product-slide__lable-container">
+                    <div class="product-slide__lable">20%</div>
+                    <div class="product-slide__lable-back"></div>
+                  </div>
+                  <p class="product-slide__price">
+                    <span class="product-slide__old-price">R$98,88</span>
+                    <span class="product-slide__value">R$88,88</span>
+                  </p>
+                </div>
+              </div>
+
+              <div class="swiper-slide">
+                <div class="products-slider__product-slide product-slide">
+                  <div class="product-slide__image-container">
+                    <img
+                      src="./images/product-6.jpg"
+                      alt="t-shirt image"
+                      class="product-slide__image"
+                    >
+                    <div class="product-slide__to-compare">
+                      Comprar
+                    </div>
+                  </div>
+                  <p class="product-slide__price">
+                    <span class="product-slide__old-price">R$98,88</span>
+                    <span class="product-slide__value">R$88,88</span>
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="products-slider__controls swiper-button-prev"></div>
+
+            <div class="products-slider__controls swiper-button-next"></div>
+          </div>
+        </div>
+
+        <div class="main__product-sections product-sections">
+          <div class="product-sections__container product-sections__container--1">
+            <a href="#" class="product-sections__link">
+              <div class="product-sections__section product-sections__section--jaquetas">
+                <h3 class="product-sections__title">Jaquetas</h3>
+              </div>
+            </a>
+
+            <a href="#" class="product-sections__link">
+              <div class="product-sections__section product-sections__section--shorts">
+                <h3 class="product-sections__title">Shorts</h3>
+              </div>
+            </a>
+          </div>
+
+          <div class="product-sections__container product-sections__container--2">
+            <a href="#" class="product-sections__link">
+              <div class="product-sections__section product-sections__section--corta-vento">
+                <h3 class="product-sections__title">Corta-vento</h3>
+              </div>
+            </a>
+
+            <a href="#" class="product-sections__link">
+              <div class="product-sections__section product-sections__section--camisas">
+                <h3 class="product-sections__title">Camisas</h3>
+              </div>
+            </a>
+          </div>
+
+          <div class="product-sections__container product-sections__container--3">
+            <a href="#" class="product-sections__link">
+              <div class="product-sections__section product-sections__section--calcas">
+                <h3 class="product-sections__title">Calças</h3>
+              </div>
+            </a>
+
+            <a href="#" class="product-sections__link">
+              <div class="product-sections__section product-sections__section--camisetas">
+                <h3 class="product-sections__title">Camisetas</h3>
+              </div>
+            </a>
+          </div>
+        </div>
+
+        <div class="main__insta-gallery">
+          <div class="main__title-container">
+            <h3 class="main__title">Galeria do instagram</h3>
+          </div>
+          <div class="main__gallery-container insta-gallery swiper-container wrapper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="insta-gallery__image-container">
+                  <img
+                    src="./images/insta-1.jpg"
+                    alt="instagram photo"
+                    class="insta-gallery__image"
+                  >
+                  <div class="insta-gallery__overlay">
+                    <p class="insta-gallery__likes"></p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="swiper-slide">
+                <div class="insta-gallery__image-container">
+                  <img
+                    src="./images/insta-2.jpg"
+                    alt="instagram photo"
+                    class="insta-gallery__image"
+                  >
+                  <div class="insta-gallery__overlay">
+                    <p class="insta-gallery__likes">1.323 likes</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="swiper-slide">
+                <div class="insta-gallery__image-container">
+                  <img
+                    src="./images/insta-3.jpg"
+                    alt="instagram photo"
+                    class="insta-gallery__image"
+                  >
+                  <div class="insta-gallery__overlay">
+                    <p class="insta-gallery__likes">1.323 likes</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="swiper-slide">
+                <div class="insta-gallery__image-container">
+                  <img
+                    src="./images/insta-4.jpg"
+                    alt="instagram photo"
+                    class="insta-gallery__image"
+                  >
+                  <div class="insta-gallery__overlay">
+                    <p class="insta-gallery__likes">1.323 likes</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="swiper-slide">
+                <div class="insta-gallery__image-container">
+                  <img
+                    src="./images/insta-5.jpg"
+                    alt="instagram photo"
+                    class="insta-gallery__image"
+                  >
+                  <div class="insta-gallery__overlay">
+                    <p class="insta-gallery__likes">1.323 likes</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="swiper-slide">
+                <div class="insta-gallery__image-container">
+                  <img
+                    src="./images/insta-1.jpg"
+                    alt="instagram photo"
+                    class="insta-gallery__image"
+                  >
+                  <div class="insta-gallery__overlay">
+                    <p class="insta-gallery__likes"></p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="swiper-slide">
+                <div class="insta-gallery__image-container">
+                  <img
+                    src="./images/insta-2.jpg"
+                    alt="instagram photo"
+                    class="insta-gallery__image"
+                  >
+                  <div class="insta-gallery__overlay">
+                    <p class="insta-gallery__likes">1.323 likes</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="swiper-slide">
+                <div class="insta-gallery__image-container">
+                  <img
+                    src="./images/insta-3.jpg"
+                    alt="instagram photo"
+                    class="insta-gallery__image"
+                  >
+                  <div class="insta-gallery__overlay">
+                    <p class="insta-gallery__likes">1.323 likes</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="swiper-slide">
+                <div class="insta-gallery__image-container">
+                  <img
+                    src="./images/insta-4.jpg"
+                    alt="instagram photo"
+                    class="insta-gallery__image"
+                  >
+                  <div class="insta-gallery__overlay">
+                    <p class="insta-gallery__likes">1.323 likes</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="swiper-slide">
+                <div class="insta-gallery__image-container">
+                  <img
+                    src="./images/insta-5.jpg"
+                    alt="instagram photo"
+                    class="insta-gallery__image"
+                  >
+                  <div class="insta-gallery__overlay">
+                    <p class="insta-gallery__likes">1.323 likes</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="main__bottom-gallery">
+          <div class="main__title-container">
+            <h3 class="main__title">Quem USA</h3>
+          </div>
+          <div class="main__gallery-container bottom-gallery swiper-container wrapper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="bottom-gallery__image-container">
+                  <img
+                    src="./images/usa-image-1.jpg"
+                    alt="gallery photo"
+                    class="bottom-gallery__image"
+                  >
+                  <div class="bottom-gallery__overlay">
+                    <p class="bottom-gallery__description"></p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="swiper-slide">
+                <div class="bottom-gallery__image-container">
+                  <img
+                    src="./images/usa-image-2.jpg"
+                    alt="gallery photo"
+                    class="bottom-gallery__image"
+                  >
+                  <div class="bottom-gallery__overlay">
+                    <p class="bottom-gallery__description">David Guetta</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="swiper-slide">
+                <div class="bottom-gallery__image-container">
+                  <img
+                    src="./images/usa-image-3.jpg"
+                    alt="gallery photo"
+                    class="bottom-gallery__image"
+                  >
+                  <div class="bottom-gallery__overlay">
+                    <p class="bottom-gallery__description"></p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="swiper-slide">
+                <div class="bottom-gallery__image-container">
+                  <img
+                    src="./images/usa-image-4.jpg"
+                    alt="gallery photo"
+                    class="bottom-gallery__image"
+                  >
+                  <div class="bottom-gallery__overlay">
+                    <p class="bottom-gallery__description"></p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="swiper-slide">
+                <div class="bottom-gallery__image-container">
+                  <img
+                    src="./images/usa-image-1.jpg"
+                    alt="gallery photo"
+                    class="bottom-gallery__image"
+                  >
+                  <div class="bottom-gallery__overlay">
+                    <p class="bottom-gallery__description"></p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="swiper-slide">
+                <div class="bottom-gallery__image-container">
+                  <img
+                    src="./images/usa-image-2.jpg"
+                    alt="gallery photo"
+                    class="bottom-gallery__image"
+                  >
+                  <div class="bottom-gallery__overlay">
+                    <p class="bottom-gallery__description">David Guetta</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="swiper-slide">
+                <div class="bottom-gallery__image-container">
+                  <img
+                    src="./images/usa-image-3.jpg"
+                    alt="gallery photo"
+                    class="bottom-gallery__image"
+                  >
+                  <div class="bottom-gallery__overlay">
+                    <p class="bottom-gallery__description"></p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="swiper-slide">
+                <div class="bottom-gallery__image-container">
+                  <img
+                    src="./images/usa-image-4.jpg"
+                    alt="gallery photo"
+                    class="bottom-gallery__image"
+                  >
+                  <div class="bottom-gallery__overlay">
+                    <p class="bottom-gallery__description"></p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <form
+          action="#"
+          class="main__form form wrapper"
+          method="POST"
+        >
+          <h3 class="form__title">Newsletter</h3>
+          <input
+            type="text"
+            class="form__input form__name-input"
+            placeholder="NOME"
+            required
+          >
+          <input
+            type="email"
+            class="form__input form__email-input"
+            placeholder="ENDEREÇO DE EMAIL"
+          >
+          <input
+            type="submit"
+            class="form__input form__submit"
+            value="CADASTRAR"
+          >
+        </form>
+
+        <div class="main__bottom-patch"></div>
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="footer__content wrapper">
+        <nav class="footer__menu">
+          <ul class="footer__menu-list">
+            <li class="footer__menu-item">
+              <a href="#" class="footer__menu-link">Sobre</a>
+            </li>
+
+            <li class="footer__menu-item">
+              <a href="#" class="footer__menu-link">Contato</a>
+            </li>
+
+            <li class="footer__menu-item">
+              <a href="#" class="footer__menu-link">Termos & condições</a>
+            </li>
+
+            <li class="footer__menu-item">
+              <a href="#" class="footer__menu-link">Política de privacidade</a>
+            </li>
+          </ul>
+        </nav>
+
+        <div class="footer__soc-container">
+          <a href="#" class="soc-container__soc-link">
+            <img
+              src="./images/facebook-icon.png"
+              alt="facebook"
+              class="soc-container__image"
+            >
+          </a>
+
+          <a href="#" class="soc-container__soc-link">
+            <img
+              src="./images/twitter-icon.png"
+              alt="twitter"
+              class="soc-container__image"
+            >
+          </a>
+
+          <a href="#" class="soc-container__soc-link">
+            <img
+              src="./images/insta-icon.png"
+              alt="instagram"
+              class="soc-container__image"
+            >
+          </a>
+        </div>
+      </div>
+    </footer>
     <script type="text/javascript" src="scripts/main.js"></script>
   </body>
 </html>

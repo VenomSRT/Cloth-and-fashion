@@ -1,7 +1,111 @@
-@import "utils";
-@import "fonts";
-@import "typography";
+.main {
+  order: 4;
+  padding-top: 21px;
 
-body {
-  background: $c-gray;
+  @media (min-width: 768px) {
+    padding-top: 23px;
+  }
+
+  @media (min-width: 1280px) {
+    padding-top: 34px;
+  }
+
+  &__products {
+    padding-bottom: 43px;
+
+    @media (min-width: 768px) {
+      padding-bottom: 12px;
+    }
+
+    @media (min-width: 1280px) {
+      padding-bottom: 52px;
+    }
+  }
+
+  &__title-container {
+    display: flex;
+    justify-content: center;
+  }
+
+  &__title {
+    display: inline-block;
+    position: relative;
+    padding: 0 55px 8px;
+    font-size: 19px;
+    color: #393939;
+    font-weight: 500;
+    text-transform: uppercase;
+    text-align: center;
+
+    @media (min-width: 480px) {
+      padding-left: 65px;
+      padding-right: 65px;
+      font-size: 20px;
+    }
+
+    @media (min-width: 768px) {
+      padding-bottom: 0;
+    }
+
+    @media (min-width: 1280px) {
+      padding-left: 76px;
+      padding-right: 76px;
+      font-size: 24px;
+    }
+
+    &::before {
+      @extend %titleArrow;
+      left: 0;
+      background-image: url("../images/left-arrow.png");
+    }
+
+    &::after {
+      @extend %titleArrow;
+      right: 0;
+      background-image: url("../images/right-arrow.png");
+    }
+  }
+
+  &__product-sections {
+    position: relative;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 50%;
+      transform: translate(-50%, 0);
+      width: 159px;
+      height: 37px;
+      background-image: url("../images/symbol-icon.png");
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: 135px;
+
+      @media (min-width: 1280px) {
+        background-size: 100%;
+      }
+    }
+  }
+
+  &__bottom-gallery {
+    padding-top: 22px;
+
+    @media (min-width: 1260px) {
+      padding-top: 76px;
+    }
+  }
+
+  &__bottom-patch {
+    height: 48px;
+    width: 100%;
+    background-image: url("../images/logo.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: #f1f1f1;
+
+    @media (min-width: 768px) {
+      display: none;
+    }
+  }
 }
